@@ -11,9 +11,17 @@
       "tagline": "Pengembaraan dunia bahasa",
       "description": "Aplikasi pembelajaran Bahasa Melayu Tahun 1–6 yang berfungsi sepenuhnya tanpa Internet. Baca cerita, jawab misi, kumpul kemajuan.",
       "icon": "assets/icons/kataquest.png",
-      "shots": ["assets/shots/kataquest-1.png", "assets/shots/kataquest-2.png", "assets/shots/kataquest-3.png"],
+      "shots": [
+        "assets/shots/kataquest-1.png",
+        "assets/shots/kataquest-2.png",
+        "assets/shots/kataquest-3.png"
+      ],
       "category": "pendidikan",
-      "tags": ["Bahasa Melayu", "Tahun 1–6", "Luar talian"],
+      "tags": [
+        "Bahasa Melayu",
+        "Tahun 1–6",
+        "Luar talian"
+      ],
       "version": "1.0.0",
       "web": "apps/kataquest/",
       "apk": null,
@@ -26,12 +34,24 @@
       "tagline": "Matematik KSSR bersama Raz",
       "description": "Ulang kaji Matematik Tahun 3 mengikut DSKP KSSR Semakan 2017. Nota, latihan dan lembaran kerja — semuanya luar talian.",
       "icon": "assets/icons/matematik-tahun3.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/matematik-tahun3-1.png",
+        "assets/shots/matematik-tahun3-2.png",
+        "assets/shots/matematik-tahun3-3.png"
+      ],
       "category": "pendidikan",
-      "tags": ["Matematik", "Tahun 3", "Luar talian"],
+      "tags": [
+        "Matematik",
+        "Tahun 3",
+        "Luar talian"
+      ],
       "version": "1.0.2",
       "web": "apps/matematik-tahun3/",
-      "apk": { "file": "matematik-tahun3-1.0.2.apk", "size": "81 MB", "label": "universal" },
+      "apk": {
+        "file": "matematik-tahun3-1.0.2.apk",
+        "size": "81 MB",
+        "label": "universal"
+      },
       "ios": null,
       "featured": true
     },
@@ -41,9 +61,16 @@
       "tagline": "Sains KSSR, tanpa Internet",
       "description": "Nota ringkas, kuiz dan ulang kaji Sains Tahun 2 mengikut KSSR Semakan 2017. Berfungsi tanpa sambungan Internet.",
       "icon": "assets/icons/sains-tahun2.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/sains-tahun2-1.png",
+        "assets/shots/sains-tahun2-2.png"
+      ],
       "category": "pendidikan",
-      "tags": ["Sains", "Tahun 2", "Luar talian"],
+      "tags": [
+        "Sains",
+        "Tahun 2",
+        "Luar talian"
+      ],
       "version": "1.0.0",
       "web": "apps/sains-tahun2/",
       "apk": null,
@@ -56,9 +83,17 @@
       "tagline": "Sains KSSR, tanpa Internet",
       "description": "Nota ringkas, kuiz dan ulang kaji Sains Tahun 5 mengikut KSSR Semakan 2017. Berfungsi tanpa sambungan Internet.",
       "icon": "assets/icons/sains-tahun5.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/sains-tahun5-1.png",
+        "assets/shots/sains-tahun5-2.png",
+        "assets/shots/sains-tahun5-3.png"
+      ],
       "category": "pendidikan",
-      "tags": ["Sains", "Tahun 5", "Luar talian"],
+      "tags": [
+        "Sains",
+        "Tahun 5",
+        "Luar talian"
+      ],
       "version": "1.0.0",
       "web": "apps/sains-tahun5/",
       "apk": null,
@@ -71,9 +106,17 @@
       "tagline": "Sejarah KSSR, tanpa Internet",
       "description": "Nota ringkas, kuiz dan ulang kaji Sejarah Tahun 5 mengikut KSSR Semakan 2017. Berfungsi tanpa sambungan Internet.",
       "icon": "assets/icons/sejarah-tahun5.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/sejarah-tahun5-1.png",
+        "assets/shots/sejarah-tahun5-2.png",
+        "assets/shots/sejarah-tahun5-3.png"
+      ],
       "category": "pendidikan",
-      "tags": ["Sejarah", "Tahun 5", "Luar talian"],
+      "tags": [
+        "Sejarah",
+        "Tahun 5",
+        "Luar talian"
+      ],
       "version": "1.0.0",
       "web": "apps/sejarah-tahun5/",
       "apk": null,
@@ -86,12 +129,23 @@
       "tagline": "6 subjek UPKK dalam satu app",
       "description": "Ulang kaji UPKK (Ujian Penilaian Kelas Al-Quran dan Fardu Ain) merangkumi 6 subjek bertulis. Semua kandungan tersedia luar talian.",
       "icon": "assets/icons/ulangkaji-upkk.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/ulangkaji-upkk-1.png",
+        "assets/shots/ulangkaji-upkk-2.png"
+      ],
       "category": "pendidikan",
-      "tags": ["UPKK", "6 subjek", "Luar talian"],
+      "tags": [
+        "UPKK",
+        "6 subjek",
+        "Luar talian"
+      ],
       "version": "2.0.0",
       "web": "apps/ulangkaji-upkk/",
-      "apk": { "file": "ulangkaji-upkk-2.0.0.apk", "size": "153 MB", "label": "arm64" },
+      "apk": {
+        "file": "ulangkaji-upkk-2.0.0.apk",
+        "size": "153 MB",
+        "label": "arm64"
+      },
       "ios": "https://apps.apple.com/my/app/id6830672652",
       "featured": true
     },
@@ -101,12 +155,25 @@
       "tagline": "10 minit sehari, kira jadi lancar",
       "description": "Latihan kira bentuk lazim, sifir dan lembaran kerja bercetak. Ada juga arena matematik untuk lawan rakan. Luar talian.",
       "icon": "assets/icons/papan-kira.png",
-      "shots": ["assets/shots/papan-kira-01-practice.png", "assets/shots/papan-kira-02-arena.png", "assets/shots/papan-kira-03-progress.png", "assets/shots/papan-kira-04-info.png"],
+      "shots": [
+        "assets/shots/papan-kira-01-practice.png",
+        "assets/shots/papan-kira-02-arena.png",
+        "assets/shots/papan-kira-03-progress.png",
+        "assets/shots/papan-kira-04-info.png"
+      ],
       "category": "pendidikan",
-      "tags": ["Matematik", "Sifir", "Luar talian"],
+      "tags": [
+        "Matematik",
+        "Sifir",
+        "Luar talian"
+      ],
       "version": "1.2.0",
       "web": "apps/papan-kira/",
-      "apk": { "file": "papan-kira-1.2.0.apk", "size": "72 MB", "label": "universal" },
+      "apk": {
+        "file": "papan-kira-1.2.0.apk",
+        "size": "72 MB",
+        "label": "universal"
+      },
       "ios": "https://apps.apple.com/my/app/id6830028218",
       "featured": true
     },
@@ -116,12 +183,27 @@
       "tagline": "Belajar membaca, langkah demi langkah",
       "description": "Aplikasi pemulihan membaca dan menulis untuk murid sekolah rendah. Latihan fonik, suku kata dan penulisan dengan bimbingan suara.",
       "icon": "assets/icons/membaca-menulis.png",
-      "shots": ["assets/shots/membaca-menulis-1.png", "assets/shots/membaca-menulis-2.png", "assets/shots/membaca-menulis-3.png", "assets/shots/membaca-menulis-4.png", "assets/shots/membaca-menulis-5.png", "assets/shots/membaca-menulis-6.png"],
+      "shots": [
+        "assets/shots/membaca-menulis-1.png",
+        "assets/shots/membaca-menulis-2.png",
+        "assets/shots/membaca-menulis-3.png",
+        "assets/shots/membaca-menulis-4.png",
+        "assets/shots/membaca-menulis-5.png",
+        "assets/shots/membaca-menulis-6.png"
+      ],
       "category": "pendidikan",
-      "tags": ["Membaca", "Menulis", "Pemulihan"],
+      "tags": [
+        "Membaca",
+        "Menulis",
+        "Pemulihan"
+      ],
       "version": "1.0.29",
       "web": null,
-      "apk": { "file": "membaca-menulis-1.0.29.apk", "size": "286 MB", "label": "arm64" },
+      "apk": {
+        "file": "membaca-menulis-1.0.29.apk",
+        "size": "286 MB",
+        "label": "arm64"
+      },
       "ios": null,
       "featured": false
     },
@@ -131,12 +213,22 @@
       "tagline": "Every Human Deserves a Voice",
       "description": "Aplikasi komunikasi AAC (Augmentative and Alternative Communication) untuk individu tanpa suara. Papan gambar, suara sintetik dan simpankan frasa — luar talian.",
       "icon": "assets/icons/voiceless.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/voiceless-1.png"
+      ],
       "category": "alat",
-      "tags": ["AAC", "Aksesibiliti", "Luar talian"],
+      "tags": [
+        "AAC",
+        "Aksesibiliti",
+        "Luar talian"
+      ],
       "version": "1.10.1",
       "web": null,
-      "apk": { "file": "voiceless-1.10.1.apk", "size": "39 MB", "label": "arm64" },
+      "apk": {
+        "file": "voiceless-1.10.1.apk",
+        "size": "39 MB",
+        "label": "arm64"
+      },
       "ios": null,
       "featured": true
     },
@@ -146,12 +238,22 @@
       "tagline": "Rhythm game dengan LAN battle",
       "description": "Permainan rentak prosedural yang dijana secara automatik. Main solo atau cabar rakan dalam pertandingan LAN tanpa Internet.",
       "icon": "assets/icons/neon-beat.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/neon-beat-1.png"
+      ],
       "category": "permainan",
-      "tags": ["Rentak", "LAN", "Luar talian"],
+      "tags": [
+        "Rentak",
+        "LAN",
+        "Luar talian"
+      ],
       "version": "1.0.0",
       "web": "apps/neon-beat/",
-      "apk": { "file": "neon-beat-1.0.0.apk", "size": "50 MB", "label": "universal" },
+      "apk": {
+        "file": "neon-beat-1.0.0.apk",
+        "size": "50 MB",
+        "label": "universal"
+      },
       "ios": null,
       "featured": false
     },
@@ -161,9 +263,16 @@
       "tagline": "Arena pertempuran pantas",
       "description": "Permainan aksi ringkas untuk sesi pendek. Cuba terus dalam browser — tiada pemasangan diperlukan.",
       "icon": "assets/icons/volt-arena.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/volt-arena-1.png",
+        "assets/shots/volt-arena-2.png"
+      ],
       "category": "permainan",
-      "tags": ["Aksi", "Eksperimen", "Browser"],
+      "tags": [
+        "Aksi",
+        "Eksperimen",
+        "Browser"
+      ],
       "version": "1.0.0",
       "web": "apps/volt-arena/",
       "apk": null,
@@ -176,12 +285,24 @@
       "tagline": "Kesihatan harian, satu app",
       "description": "Pemantauan kesihatan, pernafasan dan pergerakan harian dengan sokongan AI coach. Data disegerakkan secara peribadi.",
       "icon": "assets/icons/hidup-plus.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/hidup-plus-1.png",
+        "assets/shots/hidup-plus-2.png",
+        "assets/shots/hidup-plus-3.png"
+      ],
       "category": "kesihatan",
-      "tags": ["Kesihatan", "Kesejahteraan", "AI coach"],
+      "tags": [
+        "Kesihatan",
+        "Kesejahteraan",
+        "AI coach"
+      ],
       "version": "0.4.9",
       "web": null,
-      "apk": { "file": "hidup-plus-0.4.9.apk", "size": "29 MB", "label": "arm64" },
+      "apk": {
+        "file": "hidup-plus-0.4.9.apk",
+        "size": "29 MB",
+        "label": "arm64"
+      },
       "ios": null,
       "featured": false
     }
