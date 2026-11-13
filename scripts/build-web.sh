@@ -8,7 +8,9 @@ set -eu
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 WORKSPACE="$(cd "$ROOT/.." && pwd)"
-BASE="/raz-apps/apps"
+# Cloudflare Pages (raz-apps.pages.dev) serve dari root.
+# Untuk GitHub Pages, jalankan: BASE=/raz-apps ./scripts/build-web.sh
+BASE="${BASE:-}"
 
 # slug showcase -> folder projek Flutter
 project_for() {
@@ -48,7 +50,7 @@ build_one() {
   fi
 
   echo "==> $slug  ($proj)"
-  ( cd "$dir" && flutter build web --release --base-href "$BASE/$slug/" --no-wasm-dry-run >/dev/null )
+  ( cd "$dir" && flutter build web --release --base-href "$BASE/apps/$slug/" --no-wasm-dry-run >/dev/null )
 
   rm -rf "$ROOT/apps/$slug"
   cp -R "$dir/build/web" "$ROOT/apps/$slug"

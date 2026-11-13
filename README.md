@@ -2,7 +2,8 @@
 
 Satu laman untuk preview dan muat turun semua aplikasi.
 
-- **Live:** https://razmanzainal-source.github.io/raz-apps/
+- **Live:** https://raz-apps.pages.dev （Cloudflare Pages, bandwidth tanpa had）
+- **Sandaran:** https://razmanzainal-source.github.io/raz-apps/
 - **APK:** disimpan sebagai aset GitHub Release, bukan dalam repo.
 
 ## Struktur
@@ -66,12 +67,18 @@ fail baharu.
 ## Bina semula versi web
 
 ```bash
-./scripts/build-web.sh nama-app        # satu app
-./scripts/build-web.sh                 # semua app
+./scripts/build-web.sh papan-kira        # satu app
+./scripts/build-web.sh                   # semua app
 ```
 
-Skrip akan `flutter build web --base-href /raz-apps/apps/<slug>/`, salin ke
+Skrip akan `flutter build web --base-href /apps/<slug>/`, salin ke
 `apps/<slug>/` dan buang fail debug `canvaskit` yang tidak diperlukan.
+
+Untuk GitHub Pages (base `/raz-apps/`):
+
+```bash
+BASE=/raz-apps ./scripts/build-web.sh
+```
 
 ## Nota had GitHub Pages
 
@@ -82,8 +89,19 @@ Skrip akan `flutter build web --base-href /raz-apps/apps/<slug>/`, salin ke
 
 ## Deploy
 
+### Cloudflare Pages (utama)
+
 ```bash
+rsync -a --exclude '.git' --exclude 'dist' --exclude 'scripts' \
+      --exclude 'README.md' --exclude '.DS_Store' ./ dist/
+npx wrangler pages deploy dist --project-name=raz-apps
+```
+
+### GitHub Pages (sandaran)
+
+```bash
+BASE=/raz-apps ./scripts/build-web.sh
 git add -A && git commit -m "Kemas kini showcase" && git push
 ```
 
-GitHub Pages akan deploy automatik dari branch `main` dalam beberapa minit.
+GitHub Pages deploy automatik dari branch `main` dalam beberapa minit.
