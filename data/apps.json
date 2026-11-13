@@ -92,7 +92,7 @@
       "version": "2.0.0",
       "web": "apps/ulangkaji-upkk/",
       "apk": { "file": "ulangkaji-upkk-2.0.0.apk", "size": "153 MB", "label": "arm64" },
-      "ios": null,
+      "ios": "https://apps.apple.com/my/app/id6830672652",
       "featured": true
     },
     {
@@ -107,7 +107,7 @@
       "version": "1.2.0",
       "web": "apps/papan-kira/",
       "apk": { "file": "papan-kira-1.2.0.apk", "size": "72 MB", "label": "universal" },
-      "ios": null,
+      "ios": "https://apps.apple.com/my/app/id6830028218",
       "featured": true
     },
     {
