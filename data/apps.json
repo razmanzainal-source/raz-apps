@@ -151,7 +151,7 @@
       "tags": ["Rentak", "LAN", "Luar talian"],
       "version": "1.0.0",
       "web": "apps/neon-beat/",
-      "apk": { "file": "neon-beat-1.0.0.apk", "size": "—", "label": "universal" },
+      "apk": { "file": "neon-beat-1.0.0.apk", "size": "50 MB", "label": "universal" },
       "ios": null,
       "featured": false
     },
