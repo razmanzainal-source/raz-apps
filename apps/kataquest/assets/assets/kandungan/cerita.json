@@ -1,0 +1,174 @@
+[
+  {
+    "id": "bab.01",
+    "dunia": "ejaan",
+    "tajuk": "Huruf yang Hilang",
+    "ringkas": "Kiko menemui sepucuk surat yang hurufnya hilang.",
+    "misiId": "ej.huruf_hilang",
+    "babSebelum": null,
+    "xp": 30,
+    "lencana": "penjelajah_ejaan",
+    "adegan": [
+      {
+        "narasi": true,
+        "teks": "Pada suatu pagi, Kiko terjaga apabila mendengar bunyi pelik dari arah Gua Ejaan Ajaib."
+      },
+      {
+        "tokoh": "Kiko",
+        "teks": "Bunyi apa itu? Bunyinya seperti huruf sedang menangis!"
+      },
+      {
+        "tokoh": "Cikgu Bijak",
+        "teks": "Kiko, huruf-huruf di gua itu dah hilang. Tanpa huruf, perkataan tidak boleh dibaca."
+      },
+      {
+        "tokoh": "Kiko",
+        "teks": "Jadi, saya kena cari huruf-huruf itu?",
+        "pilihan": [
+          {
+            "teks": "Saya akan cuba!",
+            "balas": "Bagus! Keberanian itu permulaan yang baik."
+          },
+          {
+            "teks": "Saya sedikit takut.",
+            "balas": "Tidak mengapa. Kita boleh bergerak perlahan-lahan."
+          }
+        ]
+      },
+      {
+        "tokoh": "Robot Ejaan",
+        "teks": "Pintu gua memerlukan tiga huruf untuk dibuka. Mari kita cari bersama."
+      },
+      {
+        "narasi": true,
+        "teks": "Kiko melangkah ke dalam Gua Ejaan Ajaib dengan lampu kecil di tangan."
+      }
+    ]
+  },
+  {
+    "id": "bab.02",
+    "dunia": "ejaan",
+    "tajuk": "Gua Bersinar",
+    "ringkas": "Suku kata yang bertaburan perlu disusun semula.",
+    "misiId": "ej.suku_kata",
+    "babSebelum": "bab.01",
+    "xp": 35,
+    "lencana": "penjelajah_ejaan",
+    "adegan": [
+      {
+        "narasi": true,
+        "teks": "Di dalam gua, suku kata terapung seperti bintang kecil."
+      },
+      {
+        "tokoh": "Robot Ejaan",
+        "teks": "Saya simpan suku kata ini, tetapi susunannya sudah berterabur. Boleh kamu betulkan?"
+      },
+      {
+        "tokoh": "Kiko",
+        "teks": "Boleh! Saya dengar bunyinya satu demi satu.",
+        "pilihan": [
+          {
+            "teks": "Dengar dengan teliti.",
+            "balas": "Bagus. Telinga yang teliti membantu ejaan."
+          },
+          {
+            "teks": "Cuba terus.",
+            "balas": "Berani mencuba itu bagus. Kita semak bersama."
+          }
+        ]
+      },
+      {
+        "tokoh": "Robot Ejaan",
+        "teks": "Jika tersilap, tiada masalah. Setiap cubaan membuat kamu lebih mahir."
+      },
+      {
+        "narasi": true,
+        "teks": "Cahaya di dinding gua perlahan-lahan menyala semula."
+      }
+    ]
+  },
+  {
+    "id": "bab.03",
+    "dunia": "tatabahasa",
+    "tajuk": "Jejak di Hutan",
+    "ringkas": "Penjaga Hutan meminta bantuan menyiasat ayat yang keliru.",
+    "misiId": "tb.detektif",
+    "babSebelum": "bab.02",
+    "xp": 35,
+    "lencana": "penjaga_hutan",
+    "adegan": [
+      {
+        "narasi": true,
+        "teks": "Kiko keluar dari gua dan terus ke Hutan Tatabahasa."
+      },
+      {
+        "tokoh": "Penjaga Hutan",
+        "teks": "Kiko, ada ayat yang tersalah letak perkataan. Penduduk kampung jadi keliru."
+      },
+      {
+        "tokoh": "Kiko",
+        "teks": "Macam mana saya boleh tolong?"
+      },
+      {
+        "tokoh": "Penjaga Hutan",
+        "teks": "Jadi detektif kecil. Cari perkataan yang tidak kena, kemudian betulkan.",
+        "pilihan": [
+          {
+            "teks": "Saya suka jadi detektif!",
+            "balas": "Bagus! Mata yang teliti ialah alat detektif."
+          },
+          {
+            "teks": "Boleh tunjukkan contoh?",
+            "balas": "Sudah tentu. Kita lihat satu ayat bersama."
+          }
+        ]
+      },
+      {
+        "tokoh": "Detektif Kata",
+        "teks": "Ingat: jangan terus menuduh. Periksa dulu, barulah betulkan."
+      }
+    ]
+  },
+  {
+    "id": "bab.04",
+    "dunia": "ayat",
+    "tajuk": "Kota yang Bisu",
+    "ringkas": "Ayat-ayat di Kota Susun Ayat hilang susunannya.",
+    "misiId": "sa.jambatan",
+    "babSebelum": "bab.03",
+    "xp": 40,
+    "lencana": "jambatan_emas",
+    "adegan": [
+      {
+        "narasi": true,
+        "teks": "Di seberang sungai, Kota Susun Ayat kelihatan sunyi."
+      },
+      {
+        "tokoh": "Penduduk Kampung Pelangi",
+        "teks": "Ayat kami bersepah! Tiada siapa faham apa yang kami mahu sampaikan."
+      },
+      {
+        "tokoh": "Kiko",
+        "teks": "Jangan risau. Kita susun semula satu demi satu.",
+        "pilihan": [
+          {
+            "teks": "Mula dengan ayat paling mudah.",
+            "balas": "Betul. Langkah kecil membawa perubahan besar."
+          },
+          {
+            "teks": "Minta semua orang membantu.",
+            "balas": "Kerjasama memang cara terbaik."
+          }
+        ]
+      },
+      {
+        "tokoh": "Cikgu Bijak",
+        "teks": "Ayat yang tersusun membina jambatan antara fikiran dan pendengar."
+      },
+      {
+        "narasi": true,
+        "teks": "Kiko mengangkat kepingan ayat pertama. Pengembaraan baharu bermula."
+      }
+    ]
+  }
+]

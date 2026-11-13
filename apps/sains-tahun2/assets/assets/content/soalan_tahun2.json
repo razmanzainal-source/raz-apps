@@ -1,0 +1,2356 @@
+{
+  "versi": "1.0",
+  "tajuk": "Sains Tahun 2",
+  "sumber": "DSKP KSSR Semakan 2017 Sains Tahun 2 (Bahagian Pembangunan Kurikulum, KPM)",
+  "dikemaskini": "2026-10-17",
+  "unit": [
+    {
+      "id": "kemahiran-saintifik",
+      "kod": "1.0",
+      "nama": "Kemahiran Saintifik",
+      "bidang": "Inkuiri dalam Sains",
+      "ikon": "🔍",
+      "warna": "#7C4DFF",
+      "soalan": [
+        {
+          "id": "ks-01",
+          "sp": "1.1.1",
+          "jenis": "mcq",
+          "soalan": "Deria manakah yang digunakan untuk melihat?",
+          "pilihan": [
+            "Telinga",
+            "Mata",
+            "Hidung"
+          ],
+          "jawapan": 1,
+          "nota": "Mata digunakan untuk melihat.",
+          "ikon": "👁️",
+          "aras": 1
+        },
+        {
+          "id": "ks-02",
+          "sp": "1.1.1",
+          "jenis": "mcq",
+          "soalan": "Deria manakah yang digunakan untuk mendengar bunyi?",
+          "pilihan": [
+            "Mata",
+            "Kulit",
+            "Telinga"
+          ],
+          "jawapan": 2,
+          "nota": "Telinga digunakan untuk mendengar.",
+          "ikon": "👂",
+          "aras": 1
+        },
+        {
+          "id": "ks-03",
+          "sp": "1.1.1",
+          "jenis": "mcq",
+          "soalan": "Deria manakah yang digunakan untuk menghidu bau?",
+          "pilihan": [
+            "Hidung",
+            "Lidah",
+            "Telinga"
+          ],
+          "jawapan": 0,
+          "nota": "Hidung digunakan untuk menghidu.",
+          "ikon": "👃",
+          "aras": 1
+        },
+        {
+          "id": "ks-04",
+          "sp": "1.1.1",
+          "jenis": "mcq",
+          "soalan": "Deria manakah yang digunakan untuk merasa makanan?",
+          "pilihan": [
+            "Telinga",
+            "Mata",
+            "Lidah"
+          ],
+          "jawapan": 2,
+          "nota": "Lidah digunakan untuk merasa.",
+          "ikon": "👅",
+          "aras": 1
+        },
+        {
+          "id": "ks-05",
+          "sp": "1.1.1",
+          "jenis": "mcq",
+          "soalan": "Deria manakah yang dapat merasa kasar dan licin?",
+          "pilihan": [
+            "Kulit",
+            "Mata",
+            "Lidah"
+          ],
+          "jawapan": 0,
+          "nota": "Kulit dapat merasa kasar dan licin.",
+          "ikon": "🖐️",
+          "aras": 1
+        },
+        {
+          "id": "ks-06",
+          "sp": "1.1.1",
+          "jenis": "mcq",
+          "soalan": "Berapakah bilangan deria yang ada pada manusia?",
+          "pilihan": [
+            "3",
+            "4",
+            "5"
+          ],
+          "jawapan": 2,
+          "nota": "Manusia mempunyai 5 deria.",
+          "ikon": "✋",
+          "aras": 1
+        },
+        {
+          "id": "ks-07",
+          "sp": "1.1.2",
+          "jenis": "mcq",
+          "soalan": "Aina mengumpulkan semua bola merah ke dalam satu bakul. Apakah kemahiran ini?",
+          "pilihan": [
+            "Mengelas",
+            "Mengukur",
+            "Memerhati"
+          ],
+          "jawapan": 0,
+          "nota": "Mengelas ialah mengumpul objek mengikut ciri.",
+          "ikon": "🔴",
+          "aras": 2
+        },
+        {
+          "id": "ks-08",
+          "sp": "1.1.3",
+          "jenis": "gambar",
+          "soalan": "Alat manakah digunakan untuk mengukur panjang?",
+          "pilihan": [
+            "📏",
+            "⚖️",
+            "🌡️"
+          ],
+          "jawapan": 0,
+          "nota": "Pembaris mengukur panjang.",
+          "ikon": "📏",
+          "aras": 1
+        },
+        {
+          "id": "ks-09",
+          "sp": "1.1.3",
+          "jenis": "gambar",
+          "soalan": "Alat manakah digunakan untuk mengukur berat badan?",
+          "pilihan": [
+            "📏",
+            "⚖️",
+            "🧪"
+          ],
+          "jawapan": 1,
+          "nota": "Penimbang mengukur berat badan.",
+          "ikon": "⚖️",
+          "aras": 1
+        },
+        {
+          "id": "ks-10",
+          "sp": "1.1.3",
+          "jenis": "gambar",
+          "soalan": "Alat manakah digunakan untuk menyukat suhu air?",
+          "pilihan": [
+            "🌡️",
+            "⚖️",
+            "📏"
+          ],
+          "jawapan": 0,
+          "nota": "Termometer menyukat suhu.",
+          "ikon": "🌡️",
+          "aras": 1
+        },
+        {
+          "id": "ks-11",
+          "sp": "1.1.4",
+          "jenis": "mcq",
+          "soalan": "Selepas selesai menjalankan penyiasatan, apa patut kamu lakukan dengan keputusannya?",
+          "pilihan": [
+            "Simpan sendiri dan jangan beritahu sesiapa",
+            "Catat dan beritahu rakan atau guru",
+            "Buang kertas keputusan itu"
+          ],
+          "jawapan": 1,
+          "nota": "Keputusan perlu direkod dan dikongsi.",
+          "ikon": "📝",
+          "aras": 2
+        },
+        {
+          "id": "ks-12",
+          "sp": "1.2.5",
+          "jenis": "mcq",
+          "soalan": "Selepas selesai aktiviti sains, apa perlu kamu buat dengan peralatan?",
+          "pilihan": [
+            "Tinggalkan di atas meja",
+            "Bersihkan dan simpan di tempatnya",
+            "Bawa balik ke rumah"
+          ],
+          "jawapan": 1,
+          "nota": "Peralatan perlu dibersihkan dan disimpan.",
+          "ikon": "🧹",
+          "aras": 2
+        },
+        {
+          "id": "ks-13",
+          "sp": "1.2.1",
+          "jenis": "mcq",
+          "soalan": "Sebelum menggunakan sesuatu peralatan sains, apa patut kamu buat?",
+          "pilihan": [
+            "Gunakan sahaja tanpa bertanya",
+            "Tunggu arahan guru",
+            "Baling peralatan itu"
+          ],
+          "jawapan": 1,
+          "nota": "Sentiasa tunggu arahan guru dahulu.",
+          "ikon": "🧪",
+          "aras": 2
+        }
+      ]
+    },
+    {
+      "id": "peraturan-bilik-sains",
+      "kod": "2.0",
+      "nama": "Peraturan Bilik Sains",
+      "bidang": "Inkuiri dalam Sains",
+      "ikon": "🚸",
+      "warna": "#3D5AFE",
+      "soalan": [
+        {
+          "id": "pbs-01",
+          "sp": "2.1.1",
+          "jenis": "betul_salah",
+          "soalan": "Kita boleh makan dan minum di dalam bilik sains.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Makan dan minum dilarang di bilik sains.",
+          "ikon": "🚫",
+          "aras": 1
+        },
+        {
+          "id": "pbs-02",
+          "sp": "2.1.1",
+          "jenis": "betul_salah",
+          "soalan": "Kita boleh berlari-lari di dalam bilik sains.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Berlari di bilik sains boleh menyebabkan kemalangan.",
+          "ikon": "🏃",
+          "aras": 1
+        },
+        {
+          "id": "pbs-03",
+          "sp": "2.1.1",
+          "jenis": "mcq",
+          "soalan": "Jika air tertumpah di lantai bilik sains, apa patut kamu buat?",
+          "pilihan": [
+            "Biarkan sahaja",
+            "Beritahu guru",
+            "Main dengan air itu"
+          ],
+          "jawapan": 1,
+          "nota": "Beritahu guru supaya tidak berlaku kemalangan.",
+          "ikon": "💧",
+          "aras": 2
+        },
+        {
+          "id": "pbs-04",
+          "sp": "2.1.1",
+          "jenis": "mcq",
+          "soalan": "Bolehkah kita menyentuh bahan kimia tanpa arahan guru?",
+          "pilihan": [
+            "Boleh",
+            "Tidak boleh"
+          ],
+          "jawapan": 1,
+          "nota": "Bahan kimia boleh mendatangkan bahaya.",
+          "ikon": "⚠️",
+          "aras": 1
+        },
+        {
+          "id": "pbs-05",
+          "sp": "2.1.1",
+          "jenis": "mcq",
+          "soalan": "Mengapakah peraturan bilik sains perlu dipatuhi?",
+          "pilihan": [
+            "Supaya kita selamat daripada kemalangan",
+            "Supaya kita cepat habis",
+            "Supaya kita boleh bermain"
+          ],
+          "jawapan": 0,
+          "nota": "Peraturan menjaga keselamatan kita.",
+          "ikon": "🦺",
+          "aras": 3
+        },
+        {
+          "id": "pbs-06",
+          "sp": "2.1.1",
+          "jenis": "mcq",
+          "soalan": "Di manakah beg sekolah patut diletakkan di dalam bilik sains?",
+          "pilihan": [
+            "Di atas meja eksperimen",
+            "Di tempat yang dikhaskan",
+            "Di tengah jalan"
+          ],
+          "jawapan": 1,
+          "nota": "Beg diletakkan di tempat khas supaya tidak menghalang.",
+          "ikon": "🎒",
+          "aras": 2
+        },
+        {
+          "id": "pbs-07",
+          "sp": "2.1.1",
+          "jenis": "betul_salah",
+          "soalan": "Kita perlu mendengar arahan guru sebelum memulakan aktiviti.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Arahan guru menjamin keselamatan kita.",
+          "ikon": "👩‍🏫",
+          "aras": 1
+        },
+        {
+          "id": "pbs-08",
+          "sp": "2.1.1",
+          "jenis": "mcq",
+          "soalan": "Ali termakan bahan sains secara tidak sengaja. Apa patut Ali buat?",
+          "pilihan": [
+            "Diamkan sahaja",
+            "Beritahu guru dengan segera",
+            "Minum air banyak"
+          ],
+          "jawapan": 1,
+          "nota": "Beritahu guru dengan segera.",
+          "ikon": "🚑",
+          "aras": 3
+        },
+        {
+          "id": "pbs-09",
+          "sp": "2.1.1",
+          "jenis": "betul_salah",
+          "soalan": "Kita boleh membawa peralatan sains keluar dari bilik sains tanpa kebenaran.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Peralatan tidak boleh dibawa keluar tanpa kebenaran.",
+          "ikon": "🔒",
+          "aras": 2
+        },
+        {
+          "id": "pbs-10",
+          "sp": "2.1.1",
+          "jenis": "mcq",
+          "soalan": "Selepas aktiviti tamat, apa perlu kamu lakukan pada meja kerja?",
+          "pilihan": [
+            "Biarkan meja kotor",
+            "Bersihkan meja kerja",
+            "Tulis nombor di atas meja"
+          ],
+          "jawapan": 1,
+          "nota": "Meja kerja perlu dibersihkan selepas digunakan.",
+          "ikon": "🧼",
+          "aras": 2
+        }
+      ]
+    },
+    {
+      "id": "manusia",
+      "kod": "3.0",
+      "nama": "Manusia",
+      "bidang": "Sains Hayat",
+      "ikon": "🧑",
+      "warna": "#00C853",
+      "soalan": [
+        {
+          "id": "man-01",
+          "sp": "3.1.1",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah manusia membiak?",
+          "pilihan": [
+            "Bertelur",
+            "Melahirkan anak",
+            "Berpecah kepada dua"
+          ],
+          "jawapan": 1,
+          "nota": "Manusia membiak dengan melahirkan anak.",
+          "ikon": "👶",
+          "aras": 1
+        },
+        {
+          "id": "man-02",
+          "sp": "3.1.2",
+          "jenis": "mcq",
+          "soalan": "Apakah yang berubah pada diri kita sejak dilahirkan?",
+          "pilihan": [
+            "Warna bola kesukaan",
+            "Saiz, tinggi dan berat badan",
+            "Nama panggilan kita"
+          ],
+          "jawapan": 1,
+          "nota": "Saiz, tinggi dan berat berubah sejak lahir.",
+          "ikon": "📈",
+          "aras": 2
+        },
+        {
+          "id": "man-03",
+          "sp": "3.1.2",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah saiz badan kita berubah apabila bertambah usia?",
+          "pilihan": [
+            "Semakin besar",
+            "Semakin kecil",
+            "Tidak berubah"
+          ],
+          "jawapan": 0,
+          "nota": "Saiz badan kita bertambah besar.",
+          "ikon": "📏",
+          "aras": 1
+        },
+        {
+          "id": "man-04",
+          "sp": "3.1.3",
+          "jenis": "betul_salah",
+          "soalan": "Semua kanak-kanak berumur 8 tahun mempunyai saiz badan yang sama.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Tumbesaran setiap orang adalah berbeza.",
+          "ikon": "👧",
+          "aras": 2
+        },
+        {
+          "id": "man-05",
+          "sp": "3.1.3",
+          "jenis": "mcq",
+          "soalan": "Amin dan Anis sama-sama berumur 8 tahun. Tetapi tinggi mereka berbeza. Mengapa?",
+          "pilihan": [
+            "Tumbesaran setiap individu berbeza",
+            "Amin tidak makan",
+            "Anis memakai kasut tinggi"
+          ],
+          "jawapan": 0,
+          "nota": "Tumbesaran setiap individu berbeza.",
+          "ikon": "🧍",
+          "aras": 3
+        },
+        {
+          "id": "man-06",
+          "sp": "3.1.5",
+          "jenis": "mcq",
+          "soalan": "Ciri manakah diwarisi oleh anak daripada ibu dan bapa?",
+          "pilihan": [
+            "Warna kasut",
+            "Warna kulit",
+            "Nama sekolah"
+          ],
+          "jawapan": 1,
+          "nota": "Warna kulit ialah ciri yang diwarisi.",
+          "ikon": "🖐️",
+          "aras": 2
+        },
+        {
+          "id": "man-07",
+          "sp": "3.1.5",
+          "jenis": "gambar",
+          "soalan": "Ciri manakah diwarisi daripada keturunan?",
+          "pilihan": [
+            "👩‍🦱 rambut kerinting",
+            "👟 kasut baru",
+            "🎒 beg sekolah"
+          ],
+          "jawapan": 0,
+          "nota": "Jenis rambut ialah ciri warisan.",
+          "ikon": "🦱",
+          "aras": 2
+        },
+        {
+          "id": "man-08",
+          "sp": "3.1.5",
+          "jenis": "mcq",
+          "soalan": "Ibu dan bapa Siti berkulit cerah. Apakah yang mungkin diwarisi oleh Siti?",
+          "pilihan": [
+            "Warna kulit cerah",
+            "Nama ibu bapa",
+            "Warna rumah"
+          ],
+          "jawapan": 0,
+          "nota": "Anak mewarisi ciri seperti warna kulit.",
+          "ikon": "👨‍👩‍👧",
+          "aras": 3
+        },
+        {
+          "id": "man-09",
+          "sp": "3.1.5",
+          "jenis": "mcq",
+          "soalan": "Ciri manakah TIDAK diwarisi daripada ibu bapa?",
+          "pilihan": [
+            "Warna mata",
+            "Jenis rambut",
+            "Warna beg sekolah"
+          ],
+          "jawapan": 2,
+          "nota": "Warna beg bukan ciri warisan.",
+          "ikon": "🧬",
+          "aras": 2
+        },
+        {
+          "id": "man-10",
+          "sp": "3.1.4",
+          "jenis": "mcq",
+          "soalan": "Anak mewarisi ciri daripada siapa?",
+          "pilihan": [
+            "Ibu bapa atau keturunan",
+            "Rakan sekelas",
+            "Guru"
+          ],
+          "jawapan": 0,
+          "nota": "Ciri warisan datang daripada ibu bapa atau keturunan.",
+          "ikon": "👪",
+          "aras": 1
+        },
+        {
+          "id": "man-11",
+          "sp": "3.1.2",
+          "jenis": "susun",
+          "soalan": "Susun peringkat tumbesaran manusia mengikut urutan.",
+          "urutan": [
+            "Bayi",
+            "Kanak-kanak",
+            "Remaja",
+            "Dewasa"
+          ],
+          "nota": "Bayi menjadi kanak-kanak, kemudian remaja dan dewasa.",
+          "ikon": "👨",
+          "aras": 3
+        },
+        {
+          "id": "man-12",
+          "sp": "3.1.3",
+          "jenis": "mcq",
+          "soalan": "Siapakah yang lebih berat?",
+          "pilihan": [
+            "Adik Danial yang berumur 3 bulan",
+            "Kakak Nur yang berumur 9 tahun"
+          ],
+          "jawapan": 1,
+          "nota": "Semakin berusia, berat badan bertambah.",
+          "ikon": "⚖️",
+          "aras": 2
+        },
+        {
+          "id": "man-13",
+          "sp": "3.1.4",
+          "jenis": "mcq",
+          "soalan": "Apakah kegunaan salasilah keluarga?",
+          "pilihan": [
+            "Menunjukkan hubungan ahli keluarga",
+            "Menunjukkan jadual waktu kelas",
+            "Menunjukkan senarai barang"
+          ],
+          "jawapan": 0,
+          "nota": "Salasilah menunjukkan hubungan ahli keluarga.",
+          "ikon": "🌳",
+          "aras": 3
+        },
+        {
+          "id": "man-14",
+          "sp": "3.1.2",
+          "jenis": "betul_salah",
+          "soalan": "Tinggi dan berat badan seorang kanak-kanak bertambah setiap tahun.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Tinggi dan berat bertambah semasa membesar.",
+          "ikon": "📐",
+          "aras": 1
+        },
+        {
+          "id": "man-15",
+          "sp": "3.1.3",
+          "jenis": "mcq",
+          "soalan": "Untuk membandingkan saiz tapak tangan kita dengan rakan, apakah kemahiran yang digunakan?",
+          "pilihan": [
+            "Mengukur dan memerhati",
+            "Menyanyi",
+            "Melukis sahaja"
+          ],
+          "jawapan": 0,
+          "nota": "Bandingkan dengan memerhati dan mengukur.",
+          "ikon": "🤝",
+          "aras": 2
+        }
+      ]
+    },
+    {
+      "id": "haiwan",
+      "kod": "4.0",
+      "nama": "Haiwan",
+      "bidang": "Sains Hayat",
+      "ikon": "🐾",
+      "warna": "#FFAB00",
+      "soalan": [
+        {
+          "id": "hai-01",
+          "sp": "4.1.1",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah ayam membiak?",
+          "pilihan": [
+            "Bertelur",
+            "Melahirkan anak",
+            "Bertukar bentuk"
+          ],
+          "jawapan": 0,
+          "nota": "Ayam membiak dengan bertelur.",
+          "ikon": "🐔",
+          "aras": 1
+        },
+        {
+          "id": "hai-02",
+          "sp": "4.1.1",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah lembu membiak?",
+          "pilihan": [
+            "Bertelur",
+            "Melahirkan anak"
+          ],
+          "jawapan": 1,
+          "nota": "Lembu melahirkan anak.",
+          "ikon": "🐄",
+          "aras": 1
+        },
+        {
+          "id": "hai-03",
+          "sp": "4.1.2",
+          "jenis": "gambar",
+          "soalan": "Haiwan manakah yang bertelur?",
+          "pilihan": [
+            "🐔 ayam",
+            "🐱 kucing",
+            "🐘 gajah"
+          ],
+          "jawapan": 0,
+          "nota": "Ayam bertelur.",
+          "ikon": "🥚",
+          "aras": 1
+        },
+        {
+          "id": "hai-04",
+          "sp": "4.1.2",
+          "jenis": "gambar",
+          "soalan": "Haiwan manakah yang melahirkan anak?",
+          "pilihan": [
+            "🐟 ikan",
+            "🐄 lembu",
+            "🐢 penyu"
+          ],
+          "jawapan": 1,
+          "nota": "Lembu melahirkan anak.",
+          "ikon": "🐮",
+          "aras": 1
+        },
+        {
+          "id": "hai-05",
+          "sp": "4.1.2",
+          "jenis": "mcq",
+          "soalan": "Haiwan manakah yang melahirkan anak?",
+          "pilihan": [
+            "Penyu",
+            "Arnab",
+            "Burung"
+          ],
+          "jawapan": 1,
+          "nota": "Arnab melahirkan anak.",
+          "ikon": "🐰",
+          "aras": 2
+        },
+        {
+          "id": "hai-06",
+          "sp": "4.1.3",
+          "jenis": "mcq",
+          "soalan": "Haiwan manakah yang bertelur sangat banyak?",
+          "pilihan": [
+            "Ayam",
+            "Ikan",
+            "Kucing"
+          ],
+          "jawapan": 1,
+          "nota": "Ikan bertelur sangat banyak.",
+          "ikon": "🐟",
+          "aras": 3
+        },
+        {
+          "id": "hai-07",
+          "sp": "4.1.3",
+          "jenis": "mcq",
+          "soalan": "Haiwan manakah yang bertelur sedikit?",
+          "pilihan": [
+            "Ayam",
+            "Penyu",
+            "Ikan"
+          ],
+          "jawapan": 0,
+          "nota": "Ayam bertelur sedikit berbanding ikan.",
+          "ikon": "🐓",
+          "aras": 3
+        },
+        {
+          "id": "hai-08",
+          "sp": "4.1.4",
+          "jenis": "mcq",
+          "soalan": "Haiwan manakah yang melahirkan anak paling banyak?",
+          "pilihan": [
+            "Lembu",
+            "Arnab",
+            "Gajah"
+          ],
+          "jawapan": 1,
+          "nota": "Arnab melahirkan anak yang banyak.",
+          "ikon": "🐇",
+          "aras": 3
+        },
+        {
+          "id": "hai-09",
+          "sp": "4.1.4",
+          "jenis": "mcq",
+          "soalan": "Haiwan manakah yang biasanya melahirkan seorang anak sahaja?",
+          "pilihan": [
+            "Gajah",
+            "Kucing",
+            "Tikus"
+          ],
+          "jawapan": 0,
+          "nota": "Gajah biasanya melahirkan seekor anak.",
+          "ikon": "🐘",
+          "aras": 3
+        },
+        {
+          "id": "hai-10",
+          "sp": "4.1.5",
+          "jenis": "susun",
+          "soalan": "Susun kitar hidup katak mengikut urutan.",
+          "urutan": [
+            "Telur",
+            "Berudu",
+            "Katak muda",
+            "Katak dewasa"
+          ],
+          "nota": "Katak bermula dari telur menjadi berudu.",
+          "ikon": "🐸",
+          "aras": 3
+        },
+        {
+          "id": "hai-11",
+          "sp": "4.1.5",
+          "jenis": "susun",
+          "soalan": "Susun kitar hidup rama-rama mengikut urutan.",
+          "urutan": [
+            "Telur",
+            "Ulat",
+            "Kepompong",
+            "Rama-rama"
+          ],
+          "nota": "Ulat menjadi kepompong sebelum jadi rama-rama.",
+          "ikon": "🦋",
+          "aras": 3
+        },
+        {
+          "id": "hai-12",
+          "sp": "4.1.6",
+          "jenis": "mcq",
+          "soalan": "Anak haiwan manakah yang TIDAK menyerupai induknya?",
+          "pilihan": [
+            "Anak ayam",
+            "Berudu",
+            "Anak kucing"
+          ],
+          "jawapan": 1,
+          "nota": "Berudu tidak menyerupai katak dewasa.",
+          "ikon": "🐸",
+          "aras": 3
+        },
+        {
+          "id": "hai-13",
+          "sp": "4.1.6",
+          "jenis": "mcq",
+          "soalan": "Berudu akan membesar menjadi apa?",
+          "pilihan": [
+            "Ikan",
+            "Katak",
+            "Rama-rama"
+          ],
+          "jawapan": 1,
+          "nota": "Berudu membesar menjadi katak.",
+          "ikon": "🐸",
+          "aras": 2
+        },
+        {
+          "id": "hai-14",
+          "sp": "4.1.6",
+          "jenis": "mcq",
+          "soalan": "Ulat akan bertukar menjadi apa?",
+          "pilihan": [
+            "Kepompong",
+            "Burung",
+            "Ikan"
+          ],
+          "jawapan": 0,
+          "nota": "Ulat menjadi kepompong dahulu.",
+          "ikon": "🐛",
+          "aras": 2
+        },
+        {
+          "id": "hai-15",
+          "sp": "4.1.7",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah ayam menjaga telurnya?",
+          "pilihan": [
+            "Mengeram",
+            "Menanam dalam pasir",
+            "Menyorok di dalam air"
+          ],
+          "jawapan": 0,
+          "nota": "Ayam mengeram telurnya.",
+          "ikon": "🐣",
+          "aras": 2
+        },
+        {
+          "id": "hai-16",
+          "sp": "4.1.7",
+          "jenis": "mcq",
+          "soalan": "Di manakah penyu bertelur untuk melindungi telurnya?",
+          "pilihan": [
+            "Dalam pasir di tepi pantai",
+            "Atas pokok",
+            "Dalam sarang di bumbung rumah"
+          ],
+          "jawapan": 0,
+          "nota": "Penyu menanam telurnya dalam pasir.",
+          "ikon": "🐢",
+          "aras": 2
+        },
+        {
+          "id": "hai-17",
+          "sp": "4.1.7",
+          "jenis": "mcq",
+          "soalan": "Mengapakah burung membina sarang?",
+          "pilihan": [
+            "Untuk melindungi telur dan anaknya",
+            "Untuk bermain",
+            "Untuk menyimpan makanan manusia"
+          ],
+          "jawapan": 0,
+          "nota": "Sarang melindungi telur dan anak burung.",
+          "ikon": "🪺",
+          "aras": 3
+        },
+        {
+          "id": "hai-18",
+          "sp": "4.1.5",
+          "jenis": "mcq",
+          "soalan": "Kitar hidup haiwan bermula daripada apa?",
+          "pilihan": [
+            "Telur atau anak yang baru lahir",
+            "Bunga",
+            "Biji benih"
+          ],
+          "jawapan": 0,
+          "nota": "Kitar hidup haiwan bermula dari telur atau anak.",
+          "ikon": "🔄",
+          "aras": 2
+        }
+      ]
+    },
+    {
+      "id": "tumbuhan",
+      "kod": "5.0",
+      "nama": "Tumbuhan",
+      "bidang": "Sains Hayat",
+      "ikon": "🌱",
+      "warna": "#64DD17",
+      "soalan": [
+        {
+          "id": "tum-01",
+          "sp": "5.1.2",
+          "jenis": "mcq",
+          "soalan": "Apakah yang diperlukan oleh biji benih untuk bercambah?",
+          "pilihan": [
+            "Air dan udara",
+            "Gula-gula",
+            "Warna"
+          ],
+          "jawapan": 0,
+          "nota": "Biji benih perlukan air dan udara.",
+          "ikon": "🌰",
+          "aras": 2
+        },
+        {
+          "id": "tum-02",
+          "sp": "5.1.2",
+          "jenis": "betul_salah",
+          "soalan": "Biji benih boleh bercambah pada suhu yang sesuai.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Suhu yang sesuai diperlukan untuk percambahan.",
+          "ikon": "🌡️",
+          "aras": 2
+        },
+        {
+          "id": "tum-03",
+          "sp": "5.1.5",
+          "jenis": "mcq",
+          "soalan": "Apakah keperluan asas untuk tumbesaran tumbuhan?",
+          "pilihan": [
+            "Air, nutrien, udara dan cahaya matahari",
+            "Air, batu dan plastik",
+            "Gula, susu dan ais krim"
+          ],
+          "jawapan": 0,
+          "nota": "Tumbuhan perlukan air, nutrien, udara dan cahaya.",
+          "ikon": "☀️",
+          "aras": 2
+        },
+        {
+          "id": "tum-04",
+          "sp": "5.1.5",
+          "jenis": "mcq",
+          "soalan": "Apakah yang dibekalkan oleh tanah atau baja kepada tumbuhan?",
+          "pilihan": [
+            "Nutrien",
+            "Warna",
+            "Bunyi"
+          ],
+          "jawapan": 0,
+          "nota": "Tanah dan baja membekalkan nutrien.",
+          "ikon": "🪴",
+          "aras": 3
+        },
+        {
+          "id": "tum-05",
+          "sp": "5.1.4",
+          "jenis": "susun",
+          "soalan": "Susun peringkat tumbesaran pokok kelapa mengikut urutan.",
+          "urutan": [
+            "Buah kelapa",
+            "Biji benih bercambah",
+            "Anak pokok",
+            "Pokok berbunga",
+            "Pokok berbuah"
+          ],
+          "nota": "Buah kelapa bercambah menjadi anak pokok.",
+          "ikon": "🥥",
+          "aras": 3
+        },
+        {
+          "id": "tum-06",
+          "sp": "5.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah kepentingan tumbuhan kepada manusia?",
+          "pilihan": [
+            "Sumber makanan dan udara bersih",
+            "Sumber bunyi bising",
+            "Sumber sampah"
+          ],
+          "jawapan": 0,
+          "nota": "Tumbuhan ialah sumber makanan manusia.",
+          "ikon": "🍚",
+          "aras": 2
+        },
+        {
+          "id": "tum-07",
+          "sp": "5.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah kepentingan tumbuhan kepada haiwan?",
+          "pilihan": [
+            "Makanan dan tempat tinggal",
+            "Kasut dan beg",
+            "Bas dan kereta"
+          ],
+          "jawapan": 0,
+          "nota": "Haiwan makan tumbuhan dan tinggal di atasnya.",
+          "ikon": "🐿️",
+          "aras": 2
+        },
+        {
+          "id": "tum-08",
+          "sp": "5.1.5",
+          "jenis": "mcq",
+          "soalan": "Apakah yang berlaku jika tumbuhan tidak mendapat cahaya matahari?",
+          "pilihan": [
+            "Tumbuhan tidak membesar dengan sihat",
+            "Tumbuhan menjadi lebih besar",
+            "Tumbuhan berubah warna menjadi biru"
+          ],
+          "jawapan": 0,
+          "nota": "Cahaya matahari diperlukan untuk membesar.",
+          "ikon": "🌥️",
+          "aras": 3
+        },
+        {
+          "id": "tum-09",
+          "sp": "5.1.5",
+          "jenis": "mcq",
+          "soalan": "Manakah BUKAN keperluan tumbesaran tumbuhan?",
+          "pilihan": [
+            "Air",
+            "Cahaya matahari",
+            "Gula-gula"
+          ],
+          "jawapan": 2,
+          "nota": "Gula-gula bukan keperluan tumbuhan.",
+          "ikon": "🍬",
+          "aras": 2
+        },
+        {
+          "id": "tum-10",
+          "sp": "5.1.3",
+          "jenis": "mcq",
+          "soalan": "Apakah yang akan berlaku kepada biji benih yang bercambah?",
+          "pilihan": [
+            "Menjadi anak pokok",
+            "Menjadi batu",
+            "Menjadi air"
+          ],
+          "jawapan": 0,
+          "nota": "Biji benih yang bercambah menjadi anak pokok.",
+          "ikon": "🌿",
+          "aras": 1
+        },
+        {
+          "id": "tum-11",
+          "sp": "5.1.1",
+          "jenis": "mcq",
+          "soalan": "Nasi yang kita makan berasal daripada tumbuhan apa?",
+          "pilihan": [
+            "Pokok padi",
+            "Pokok kelapa",
+            "Pokok getah"
+          ],
+          "jawapan": 0,
+          "nota": "Nasi berasal daripada pokok padi.",
+          "ikon": "🌾",
+          "aras": 2
+        },
+        {
+          "id": "tum-12",
+          "sp": "5.1.1",
+          "jenis": "gambar",
+          "soalan": "Haiwan manakah yang makan tumbuhan?",
+          "pilihan": [
+            "🐄 lembu",
+            "🦁 singa",
+            "🐯 harimau"
+          ],
+          "jawapan": 0,
+          "nota": "Lembu makan rumput.",
+          "ikon": "🌾",
+          "aras": 1
+        },
+        {
+          "id": "tum-13",
+          "sp": "5.1.3",
+          "jenis": "mcq",
+          "soalan": "Apakah yang patut dicatat semasa memerhati tumbesaran tumbuhan?",
+          "pilihan": [
+            "Bilangan daun dan tinggi pokok",
+            "Warna kasut kita",
+            "Nama rakan sekelas"
+          ],
+          "jawapan": 0,
+          "nota": "Catat bilangan daun dan tinggi pokok.",
+          "ikon": "📓",
+          "aras": 2
+        },
+        {
+          "id": "tum-14",
+          "sp": "5.1.6",
+          "jenis": "mcq",
+          "soalan": "Apakah yang berlaku kepada manusia dan haiwan jika tumbesaran tumbuhan terganggu?",
+          "pilihan": [
+            "Mereka kekurangan sumber makanan",
+            "Mereka mendapat lebih banyak makanan",
+            "Tiada kesan langsung"
+          ],
+          "jawapan": 0,
+          "nota": "Tumbuhan ialah sumber makanan, jadi makanan berkurang.",
+          "ikon": "🍽️",
+          "aras": 3
+        },
+        {
+          "id": "tum-15",
+          "sp": "5.1.2",
+          "jenis": "betul_salah",
+          "soalan": "Biji benih yang tidak mendapat air tidak akan bercambah.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Air diperlukan untuk percambahan.",
+          "ikon": "💧",
+          "aras": 2
+        },
+        {
+          "id": "tum-16",
+          "sp": "5.1.4",
+          "jenis": "mcq",
+          "soalan": "Apakah peringkat terakhir dalam tumbesaran tumbuhan yang berbuah?",
+          "pilihan": [
+            "Pokok berbuah",
+            "Biji benih bercambah",
+            "Anak pokok"
+          ],
+          "jawapan": 0,
+          "nota": "Peringkat akhir ialah pokok berbuah.",
+          "ikon": "🍎",
+          "aras": 2
+        }
+      ]
+    },
+    {
+      "id": "terang-dan-gelap",
+      "kod": "6.0",
+      "nama": "Terang dan Gelap",
+      "bidang": "Sains Fizikal",
+      "ikon": "🔆",
+      "warna": "#FFD600",
+      "soalan": [
+        {
+          "id": "tg-01",
+          "sp": "6.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah sumber cahaya semula jadi yang paling terang pada waktu siang?",
+          "pilihan": [
+            "Matahari",
+            "Lampu meja",
+            "Lilin"
+          ],
+          "jawapan": 0,
+          "nota": "Matahari ialah sumber cahaya semula jadi.",
+          "ikon": "☀️",
+          "aras": 1
+        },
+        {
+          "id": "tg-02",
+          "sp": "6.1.1",
+          "jenis": "mcq",
+          "soalan": "Manakah sumber cahaya buatan?",
+          "pilihan": [
+            "Matahari",
+            "Lampu meja",
+            "Awan"
+          ],
+          "jawapan": 1,
+          "nota": "Lampu ialah sumber cahaya buatan.",
+          "ikon": "💡",
+          "aras": 1
+        },
+        {
+          "id": "tg-03",
+          "sp": "6.1.1",
+          "jenis": "gambar",
+          "soalan": "Alat manakah mengeluarkan cahaya?",
+          "pilihan": [
+            "🔦 lampu suluh",
+            "🧊 ais",
+            "🪨 batu"
+          ],
+          "jawapan": 0,
+          "nota": "Lampu suluh mengeluarkan cahaya.",
+          "ikon": "🔦",
+          "aras": 1
+        },
+        {
+          "id": "tg-04",
+          "sp": "6.1.1",
+          "jenis": "betul_salah",
+          "soalan": "Lilin ialah sumber cahaya.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Lilin yang dinyalakan mengeluarkan cahaya.",
+          "ikon": "🕯️",
+          "aras": 2
+        },
+        {
+          "id": "tg-05",
+          "sp": "6.1.3",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah bayang-bayang dihasilkan?",
+          "pilihan": [
+            "Apabila cahaya dihalang oleh objek",
+            "Apabila angin bertiup",
+            "Apabila air mengalir"
+          ],
+          "jawapan": 0,
+          "nota": "Cahaya yang dihalang objek membentuk bayang-bayang.",
+          "ikon": "🌑",
+          "aras": 2
+        },
+        {
+          "id": "tg-06",
+          "sp": "6.1.3",
+          "jenis": "mcq",
+          "soalan": "Kita boleh bermain permainan bayang-bayang dengan menggunakan apa?",
+          "pilihan": [
+            "Cahaya dan tangan",
+            "Air dan sabun",
+            "Angin dan daun"
+          ],
+          "jawapan": 0,
+          "nota": "Bayang-bayang perlu cahaya dan objek.",
+          "ikon": "🤲",
+          "aras": 2
+        },
+        {
+          "id": "tg-07",
+          "sp": "6.1.4",
+          "jenis": "mcq",
+          "soalan": "Objek manakah menghasilkan bayang-bayang yang paling jelas?",
+          "pilihan": [
+            "Kertas A4",
+            "Kertas surih",
+            "Plastik lut sinar"
+          ],
+          "jawapan": 0,
+          "nota": "Kertas tebal menghalang cahaya sepenuhnya.",
+          "ikon": "📄",
+          "aras": 3
+        },
+        {
+          "id": "tg-08",
+          "sp": "6.1.4",
+          "jenis": "mcq",
+          "soalan": "Objek manakah menghasilkan bayang-bayang yang kurang jelas?",
+          "pilihan": [
+            "Kertas A4",
+            "Kertas surih",
+            "Kayu tebal"
+          ],
+          "jawapan": 1,
+          "nota": "Kertas surih membenarkan sedikit cahaya melaluinya.",
+          "ikon": "🔅",
+          "aras": 3
+        },
+        {
+          "id": "tg-09",
+          "sp": "6.1.2",
+          "jenis": "mcq",
+          "soalan": "Apakah yang berlaku jika kita berada di tempat yang gelap tanpa cahaya?",
+          "pilihan": [
+            "Kita tidak dapat melihat dengan jelas",
+            "Kita dapat melihat dengan lebih jelas",
+            "Kita dapat melihat seperti biasa"
+          ],
+          "jawapan": 0,
+          "nota": "Tanpa cahaya kita tidak dapat melihat.",
+          "ikon": "🌚",
+          "aras": 2
+        },
+        {
+          "id": "tg-10",
+          "sp": "6.1.2",
+          "jenis": "betul_salah",
+          "soalan": "Bayang-bayang boleh terbentuk walaupun tiada cahaya.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Cahaya diperlukan untuk membentuk bayang-bayang.",
+          "ikon": "🌑",
+          "aras": 2
+        },
+        {
+          "id": "tg-11",
+          "sp": "6.1.5",
+          "jenis": "mcq",
+          "soalan": "Apakah kepentingan cahaya kepada manusia?",
+          "pilihan": [
+            "Membolehkan kita melihat dan melakukan aktiviti",
+            "Menjadikan kita cepat lapar",
+            "Menjadikan kita cepat tidur"
+          ],
+          "jawapan": 0,
+          "nota": "Cahaya membantu kita melihat.",
+          "ikon": "👀",
+          "aras": 2
+        },
+        {
+          "id": "tg-12",
+          "sp": "6.1.5",
+          "jenis": "mcq",
+          "soalan": "Mengapakah kita menyalakan lampu pada waktu malam?",
+          "pilihan": [
+            "Supaya dapat melihat dengan jelas",
+            "Supaya bilik menjadi panas",
+            "Supaya dapat tidur cepat"
+          ],
+          "jawapan": 0,
+          "nota": "Lampu menerangi tempat yang gelap.",
+          "ikon": "🔌",
+          "aras": 2
+        },
+        {
+          "id": "tg-13",
+          "sp": "6.1.1",
+          "jenis": "mcq",
+          "soalan": "Sekumpulan murid bermain di luar pada waktu malam. Apakah sumber cahaya yang menerangi mereka?",
+          "pilihan": [
+            "Lampu jalan",
+            "Matahari",
+            "Pokok"
+          ],
+          "jawapan": 0,
+          "nota": "Pada waktu malam, lampu jalan menerangi tempat itu.",
+          "ikon": "🌃",
+          "aras": 2
+        },
+        {
+          "id": "tg-14",
+          "sp": "6.1.4",
+          "jenis": "padan",
+          "soalan": "Padankan objek dengan kejelasan bayang-bayangnya.",
+          "pasangan": [
+            {
+              "a": "Kertas A4",
+              "b": "Bayang-bayang jelas"
+            },
+            {
+              "a": "Kertas surih",
+              "b": "Bayang-bayang kurang jelas"
+            },
+            {
+              "a": "Plastik lut sinar",
+              "b": "Hampir tiada bayang-bayang"
+            }
+          ],
+          "nota": "Kejelasan bayang bergantung pada objek.",
+          "ikon": "🔍",
+          "aras": 3
+        }
+      ]
+    },
+    {
+      "id": "elektrik",
+      "kod": "7.0",
+      "nama": "Elektrik",
+      "bidang": "Sains Fizikal",
+      "ikon": "⚡",
+      "warna": "#FF6D00",
+      "soalan": [
+        {
+          "id": "el-01",
+          "sp": "7.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah nama komponen ini?",
+          "pilihan": [
+            "Sel kering",
+            "Mentol",
+            "Suis"
+          ],
+          "jawapan": 0,
+          "nota": "Sel kering membekalkan kuasa elektrik.",
+          "ikon": "🔋",
+          "aras": 1,
+          "rajah": "🔋"
+        },
+        {
+          "id": "el-02",
+          "sp": "7.1.1",
+          "jenis": "gambar",
+          "soalan": "Komponen apakah yang menyala dalam litar elektrik?",
+          "pilihan": [
+            "💡 mentol",
+            "🔋 sel kering",
+            "🔗 wayar"
+          ],
+          "jawapan": 0,
+          "nota": "Mentol menyala apabila arus mengalir.",
+          "ikon": "💡",
+          "aras": 1
+        },
+        {
+          "id": "el-03",
+          "sp": "7.1.1",
+          "jenis": "mcq",
+          "soalan": "Komponen manakah digunakan untuk membuka dan menutup litar?",
+          "pilihan": [
+            "Suis",
+            "Mentol",
+            "Wayar"
+          ],
+          "jawapan": 0,
+          "nota": "Suis membuka dan menutup litar.",
+          "ikon": "🎚️",
+          "aras": 2
+        },
+        {
+          "id": "el-04",
+          "sp": "7.1.2",
+          "jenis": "mcq",
+          "soalan": "Apakah fungsi sel kering dalam litar elektrik?",
+          "pilihan": [
+            "Membekalkan kuasa elektrik",
+            "Menyala",
+            "Membuka dan menutup litar"
+          ],
+          "jawapan": 0,
+          "nota": "Sel kering membekalkan kuasa elektrik.",
+          "ikon": "🔋",
+          "aras": 2
+        },
+        {
+          "id": "el-05",
+          "sp": "7.1.2",
+          "jenis": "mcq",
+          "soalan": "Apakah fungsi mentol dalam litar elektrik?",
+          "pilihan": [
+            "Menghasilkan cahaya",
+            "Membekalkan kuasa",
+            "Menyambung wayar"
+          ],
+          "jawapan": 0,
+          "nota": "Mentol menghasilkan cahaya.",
+          "ikon": "💡",
+          "aras": 2
+        },
+        {
+          "id": "el-06",
+          "sp": "7.1.2",
+          "jenis": "mcq",
+          "soalan": "Apakah fungsi wayar penyambung?",
+          "pilihan": [
+            "Menyambungkan semua komponen",
+            "Menyala",
+            "Menyimpan elektrik"
+          ],
+          "jawapan": 0,
+          "nota": "Wayar menyambungkan komponen litar.",
+          "ikon": "🔗",
+          "aras": 2
+        },
+        {
+          "id": "el-07",
+          "sp": "7.1.3",
+          "jenis": "mcq",
+          "soalan": "Bilakah mentol akan menyala?",
+          "pilihan": [
+            "Apabila litar lengkap",
+            "Apabila litar terbuka",
+            "Apabila suis dibuka"
+          ],
+          "jawapan": 0,
+          "nota": "Mentol menyala apabila litar lengkap.",
+          "ikon": "✨",
+          "aras": 3
+        },
+        {
+          "id": "el-08",
+          "sp": "7.1.3",
+          "jenis": "susun",
+          "soalan": "Apakah komponen yang perlu ada untuk membina litar elektrik lengkap?",
+          "urutan": [
+            "Sel kering",
+            "Wayar penyambung",
+            "Suis",
+            "Mentol"
+          ],
+          "nota": "Litar lengkap perlu sel kering, wayar, suis dan mentol.",
+          "ikon": "🔧",
+          "aras": 3
+        },
+        {
+          "id": "el-09",
+          "sp": "7.1.4",
+          "jenis": "mcq",
+          "soalan": "Suis sudah ditutup, jadi litar sepatutnya lengkap. Tetapi mentol tidak menyala. Mengapakah?",
+          "pilihan": [
+            "Kerana wayar tidak bersambung dengan betul",
+            "Kerana hari sudah gelap",
+            "Kerana mentol terlalu kecil"
+          ],
+          "jawapan": 0,
+          "nota": "Jika wayar tidak bersambung dengan betul, litar tidak lengkap dan mentol tidak menyala.",
+          "ikon": "❌",
+          "aras": 3
+        },
+        {
+          "id": "el-10",
+          "sp": "7.1.4",
+          "jenis": "mcq",
+          "soalan": "Suis dibuka, jadi litar elektrik tidak lengkap. Apakah yang berlaku kepada mentol?",
+          "pilihan": [
+            "Mentol tidak menyala",
+            "Mentol menyala",
+            "Mentol pecah"
+          ],
+          "jawapan": 0,
+          "nota": "Suis yang dibuka memutuskan litar, jadi mentol tidak menyala.",
+          "ikon": "🔌",
+          "aras": 2
+        },
+        {
+          "id": "el-11",
+          "sp": "7.1.6",
+          "jenis": "mcq",
+          "soalan": "Bahan yang boleh menyalakan mentol dipanggil apa?",
+          "pilihan": [
+            "Konduktor",
+            "Penebat",
+            "Magnet"
+          ],
+          "jawapan": 0,
+          "nota": "Konduktor membenarkan arus elektrik mengalir.",
+          "ikon": "🔩",
+          "aras": 3
+        },
+        {
+          "id": "el-12",
+          "sp": "7.1.6",
+          "jenis": "mcq",
+          "soalan": "Bahan yang tidak boleh menyalakan mentol dipanggil apa?",
+          "pilihan": [
+            "Penebat",
+            "Konduktor",
+            "Suis"
+          ],
+          "jawapan": 0,
+          "nota": "Penebat tidak membenarkan arus elektrik mengalir.",
+          "ikon": "🧽",
+          "aras": 3
+        },
+        {
+          "id": "el-13",
+          "sp": "7.1.5",
+          "jenis": "gambar",
+          "soalan": "Objek manakah boleh menyalakan mentol?",
+          "pilihan": [
+            "🪙 duit syiling",
+            "🧽 pemadam",
+            "📄 kertas"
+          ],
+          "jawapan": 0,
+          "nota": "Duit syiling diperbuat daripada logam, ia konduktor.",
+          "ikon": "🪙",
+          "aras": 2
+        },
+        {
+          "id": "el-14",
+          "sp": "7.1.5",
+          "jenis": "mcq",
+          "soalan": "Objek manakah TIDAK boleh menyalakan mentol?",
+          "pilihan": [
+            "Paku",
+            "Klip kertas",
+            "Pemadam"
+          ],
+          "jawapan": 2,
+          "nota": "Pemadam ialah penebat.",
+          "ikon": "🧽",
+          "aras": 2
+        },
+        {
+          "id": "el-15",
+          "sp": "7.1.2",
+          "jenis": "padan",
+          "soalan": "Padankan komponen litar elektrik dengan fungsinya.",
+          "pasangan": [
+            {
+              "a": "Sel kering",
+              "b": "Membekalkan kuasa"
+            },
+            {
+              "a": "Mentol",
+              "b": "Menghasilkan cahaya"
+            },
+            {
+              "a": "Suis",
+              "b": "Membuka dan menutup litar"
+            }
+          ],
+          "nota": "Setiap komponen mempunyai fungsi sendiri.",
+          "ikon": "🔌",
+          "aras": 3
+        },
+        {
+          "id": "el-16",
+          "sp": "7.1.7",
+          "jenis": "betul_salah",
+          "soalan": "Kita boleh memasukkan jari ke dalam soket elektrik.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Bermain dengan elektrik sangat bahaya.",
+          "ikon": "⚠️",
+          "aras": 1
+        },
+        {
+          "id": "el-17",
+          "sp": "7.1.2",
+          "jenis": "betul_salah",
+          "soalan": "Suis yang ditutup melengkapkan litar elektrik.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Suis ditutup melengkapkan litar, jadi arus boleh mengalir dan mentol menyala.",
+          "ikon": "🔘",
+          "aras": 2
+        }
+      ]
+    },
+    {
+      "id": "campuran",
+      "kod": "8.0",
+      "nama": "Campuran",
+      "bidang": "Sains Bahan",
+      "ikon": "🥣",
+      "warna": "#00B8D4",
+      "soalan": [
+        {
+          "id": "cam-01",
+          "sp": "8.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah maksud campuran?",
+          "pilihan": [
+            "Gabungan dua atau lebih bahan",
+            "Satu bahan sahaja",
+            "Bahan yang keras sahaja"
+          ],
+          "jawapan": 0,
+          "nota": "Campuran ialah gabungan dua atau lebih bahan.",
+          "ikon": "🥣",
+          "aras": 2
+        },
+        {
+          "id": "cam-02",
+          "sp": "8.1.3",
+          "jenis": "mcq",
+          "soalan": "Bahan manakah boleh larut dalam air?",
+          "pilihan": [
+            "Gula",
+            "Pasir",
+            "Batu"
+          ],
+          "jawapan": 0,
+          "nota": "Gula boleh larut dalam air.",
+          "ikon": "🍬",
+          "aras": 1
+        },
+        {
+          "id": "cam-03",
+          "sp": "8.1.3",
+          "jenis": "mcq",
+          "soalan": "Bahan manakah tidak boleh larut dalam air?",
+          "pilihan": [
+            "Garam",
+            "Pasir",
+            "Gula"
+          ],
+          "jawapan": 1,
+          "nota": "Pasir tidak boleh larut dalam air.",
+          "ikon": "🏖️",
+          "aras": 1
+        },
+        {
+          "id": "cam-04",
+          "sp": "8.1.3",
+          "jenis": "mcq",
+          "soalan": "Apakah yang berlaku kepada garam apabila dikacau di dalam air?",
+          "pilihan": [
+            "Larut dalam air",
+            "Menjadi batu",
+            "Tenggelam ke dasar"
+          ],
+          "jawapan": 0,
+          "nota": "Garam larut dalam air.",
+          "ikon": "🧂",
+          "aras": 2
+        },
+        {
+          "id": "cam-05",
+          "sp": "8.1.1",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah caranya untuk mengasingkan pasir daripada air?",
+          "pilihan": [
+            "Menapis campuran itu",
+            "Menjatuhkan bekas itu",
+            "Menyalakan campuran itu"
+          ],
+          "jawapan": 0,
+          "nota": "Penapis memisahkan pasir daripada air.",
+          "ikon": "🫗",
+          "aras": 2
+        },
+        {
+          "id": "cam-06",
+          "sp": "8.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah yang boleh digunakan untuk menarik paku besi keluar daripada pasir?",
+          "pilihan": [
+            "Magnet",
+            "Penapis",
+            "Sudu"
+          ],
+          "jawapan": 0,
+          "nota": "Magnet menarik bahan besi.",
+          "ikon": "🧲",
+          "aras": 2
+        },
+        {
+          "id": "cam-07",
+          "sp": "8.1.2",
+          "jenis": "mcq",
+          "soalan": "Mengapakah magnet digunakan untuk mengasingkan paku daripada pasir?",
+          "pilihan": [
+            "Kerana paku diperbuat daripada besi",
+            "Kerana pasir berwarna putih",
+            "Kerana magnet berwarna merah"
+          ],
+          "jawapan": 0,
+          "nota": "Magnet hanya menarik bahan besi.",
+          "ikon": "🔍",
+          "aras": 3
+        },
+        {
+          "id": "cam-08",
+          "sp": "8.1.4",
+          "jenis": "mcq",
+          "soalan": "Apakah yang perlu dilakukan supaya gula larut lebih cepat di dalam air?",
+          "pilihan": [
+            "Mengacau air itu",
+            "Menyejukkan air itu",
+            "Membiarkan tanpa kacau"
+          ],
+          "jawapan": 0,
+          "nota": "Mengacau mempercepatkan proses melarut.",
+          "ikon": "🥄",
+          "aras": 3
+        },
+        {
+          "id": "cam-09",
+          "sp": "8.1.4",
+          "jenis": "mcq",
+          "soalan": "Mengapakah gula serbuk larut lebih cepat daripada gula batu?",
+          "pilihan": [
+            "Kerana saiz gula serbuk lebih kecil",
+            "Kerana gula serbuk berwarna putih",
+            "Kerana gula batu lebih manis"
+          ],
+          "jawapan": 0,
+          "nota": "Saiz bahan yang kecil melarut lebih cepat.",
+          "ikon": "🔍",
+          "aras": 3
+        },
+        {
+          "id": "cam-10",
+          "sp": "8.1.1",
+          "jenis": "mcq",
+          "soalan": "Manakah BUKAN satu campuran?",
+          "pilihan": [
+            "Air dengan pasir",
+            "Gula dengan air",
+            "Air masak sahaja"
+          ],
+          "jawapan": 2,
+          "nota": "Campuran perlu dua bahan atau lebih.",
+          "ikon": "💧",
+          "aras": 2
+        },
+        {
+          "id": "cam-11",
+          "sp": "8.1.3",
+          "jenis": "betul_salah",
+          "soalan": "Garam tidak boleh larut di dalam air.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Garam boleh larut dalam air.",
+          "ikon": "🧂",
+          "aras": 1
+        },
+        {
+          "id": "cam-12",
+          "sp": "8.1.1",
+          "jenis": "mcq",
+          "soalan": "Campuran kacang tanah dan daun kering boleh diasingkan dengan menggunakan apa?",
+          "pilihan": [
+            "Penapis",
+            "Magnet",
+            "Termometer"
+          ],
+          "jawapan": 0,
+          "nota": "Penapis memisahkan bahan mengikut saiz.",
+          "ikon": "🥜",
+          "aras": 2
+        },
+        {
+          "id": "cam-13",
+          "sp": "8.1.5",
+          "jenis": "mcq",
+          "soalan": "Bagaimana caranya untuk mendapatkan semula garam daripada air garam?",
+          "pilihan": [
+            "Biarkan air itu kering",
+            "Tambah pasir ke dalamnya",
+            "Tambah batu ke dalamnya"
+          ],
+          "jawapan": 0,
+          "nota": "Apabila air kering, garam tertinggal.",
+          "ikon": "🧂",
+          "aras": 3
+        },
+        {
+          "id": "cam-14",
+          "sp": "8.1.3",
+          "jenis": "mcq",
+          "soalan": "Apakah yang berlaku kepada bahan yang tidak larut di dalam air?",
+          "pilihan": [
+            "Ia kekal di dasar bekas",
+            "Ia hilang terus",
+            "Ia bertukar menjadi gula"
+          ],
+          "jawapan": 0,
+          "nota": "Bahan tidak larut kekal di dalam air.",
+          "ikon": "⬇️",
+          "aras": 2
+        }
+      ]
+    },
+    {
+      "id": "bumi",
+      "kod": "9.0",
+      "nama": "Bumi: Air dan Udara",
+      "bidang": "Bumi dan Angkasa",
+      "ikon": "🌍",
+      "warna": "#0091EA",
+      "soalan": [
+        {
+          "id": "air-01",
+          "sp": "9.1.1",
+          "jenis": "mcq",
+          "soalan": "Manakah sumber air semula jadi?",
+          "pilihan": [
+            "Sungai",
+            "Baldi",
+            "Pili air"
+          ],
+          "jawapan": 0,
+          "nota": "Sungai ialah sumber air semula jadi.",
+          "ikon": "🌊",
+          "aras": 1
+        },
+        {
+          "id": "air-02",
+          "sp": "9.1.1",
+          "jenis": "gambar",
+          "soalan": "Manakah sumber air semula jadi?",
+          "pilihan": [
+            "🌧️ hujan",
+            "🚰 air paip",
+            "🍶 air botol"
+          ],
+          "jawapan": 0,
+          "nota": "Hujan ialah sumber air semula jadi.",
+          "ikon": "🌧️",
+          "aras": 1
+        },
+        {
+          "id": "air-03",
+          "sp": "9.1.1",
+          "jenis": "mcq",
+          "soalan": "Manakah BUKAN sumber air semula jadi?",
+          "pilihan": [
+            "Sungai",
+            "Tasik",
+            "Pili air"
+          ],
+          "jawapan": 2,
+          "nota": "Pili air bukan sumber air semula jadi.",
+          "ikon": "🚰",
+          "aras": 2
+        },
+        {
+          "id": "air-04",
+          "sp": "9.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah sumber air semula jadi yang paling besar di dunia?",
+          "pilihan": [
+            "Laut",
+            "Kolam",
+            "Perigi"
+          ],
+          "jawapan": 0,
+          "nota": "Laut ialah sumber air semula jadi terbesar.",
+          "ikon": "🌊",
+          "aras": 2
+        },
+        {
+          "id": "air-05",
+          "sp": "9.1.2",
+          "jenis": "mcq",
+          "soalan": "Air mengalir dari tempat yang mana?",
+          "pilihan": [
+            "Dari tempat tinggi ke tempat rendah",
+            "Dari tempat rendah ke tempat tinggi",
+            "Dari bawah ke atas"
+          ],
+          "jawapan": 0,
+          "nota": "Air sentiasa mengalir ke tempat rendah.",
+          "ikon": "⬇️",
+          "aras": 2
+        },
+        {
+          "id": "air-06",
+          "sp": "9.1.3",
+          "jenis": "gambar",
+          "soalan": "Manakah contoh aliran air semula jadi?",
+          "pilihan": [
+            "🏞️ air terjun",
+            "🪣 air dalam baldi",
+            "🍶 air dalam botol"
+          ],
+          "jawapan": 0,
+          "nota": "Air terjun mengalir secara semula jadi.",
+          "ikon": "🏞️",
+          "aras": 2
+        },
+        {
+          "id": "air-07",
+          "sp": "9.1.4",
+          "jenis": "mcq",
+          "soalan": "Air dari laut dan sungai akan menjadi apa apabila terkena panas matahari?",
+          "pilihan": [
+            "Wap air",
+            "Batu",
+            "Pasir"
+          ],
+          "jawapan": 0,
+          "nota": "Air yang panas bertukar menjadi wap air.",
+          "ikon": "☁️",
+          "aras": 2
+        },
+        {
+          "id": "air-08",
+          "sp": "9.1.4",
+          "jenis": "mcq",
+          "soalan": "Wap air akan membentuk apa di langit?",
+          "pilihan": [
+            "Awan",
+            "Pokok",
+            "Batu"
+          ],
+          "jawapan": 0,
+          "nota": "Wap air membentuk awan.",
+          "ikon": "☁️",
+          "aras": 2
+        },
+        {
+          "id": "air-09",
+          "sp": "9.1.4",
+          "jenis": "mcq",
+          "soalan": "Awan akan menghasilkan apa?",
+          "pilihan": [
+            "Hujan",
+            "Awan baharu",
+            "Batu"
+          ],
+          "jawapan": 0,
+          "nota": "Awan menghasilkan hujan.",
+          "ikon": "🌧️",
+          "aras": 1
+        },
+        {
+          "id": "air-10",
+          "sp": "9.1.4",
+          "jenis": "mcq",
+          "soalan": "Air hujan akan mengalir semula ke mana?",
+          "pilihan": [
+            "Ke sungai dan laut",
+            "Ke dalam rumah",
+            "Ke dalam buku"
+          ],
+          "jawapan": 0,
+          "nota": "Air hujan mengalir semula ke sungai dan laut.",
+          "ikon": "🌊",
+          "aras": 2
+        },
+        {
+          "id": "air-11",
+          "sp": "9.1.4",
+          "jenis": "susun",
+          "soalan": "Susun kitar air mengikut urutan.",
+          "urutan": [
+            "Air di sungai atau laut",
+            "Wap air",
+            "Awan",
+            "Hujan"
+          ],
+          "nota": "Air menjadi wap, membentuk awan, lalu turun sebagai hujan.",
+          "ikon": "🔄",
+          "aras": 3
+        },
+        {
+          "id": "air-12",
+          "sp": "9.1.5",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah kita boleh menjaga sumber air yang bersih?",
+          "pilihan": [
+            "Tidak membuang sampah ke dalam sungai",
+            "Membuang minyak ke dalam sungai",
+            "Menutup sungai dengan plastik"
+          ],
+          "jawapan": 0,
+          "nota": "Jangan mencemarkan sumber air.",
+          "ikon": "🚯",
+          "aras": 2
+        },
+        {
+          "id": "air-13",
+          "sp": "9.1.5",
+          "jenis": "mcq",
+          "soalan": "Apakah yang berlaku jika aliran air terganggu?",
+          "pilihan": [
+            "Boleh berlaku banjir atau kekurangan air bersih",
+            "Air menjadi lebih banyak",
+            "Tiada apa-apa kesan"
+          ],
+          "jawapan": 0,
+          "nota": "Aliran air yang terganggu memberi kesan buruk.",
+          "ikon": "⚠️",
+          "aras": 3
+        },
+        {
+          "id": "udr-01",
+          "sp": "9.2.1",
+          "jenis": "mcq",
+          "soalan": "Di manakah udara berada?",
+          "pilihan": [
+            "Di sekeliling kita",
+            "Hanya di dalam bilik sahaja",
+            "Hanya di dalam air sahaja"
+          ],
+          "jawapan": 0,
+          "nota": "Udara berada di sekeliling kita.",
+          "ikon": "💨",
+          "aras": 1
+        },
+        {
+          "id": "udr-02",
+          "sp": "9.2.1",
+          "jenis": "betul_salah",
+          "soalan": "Kita boleh melihat udara dengan mata kita.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Udara tidak boleh dilihat tetapi boleh dirasai.",
+          "ikon": "👀",
+          "aras": 2
+        },
+        {
+          "id": "udr-03",
+          "sp": "9.2.3",
+          "jenis": "mcq",
+          "soalan": "Udara yang bergerak disebut apa?",
+          "pilihan": [
+            "Angin",
+            "Awan",
+            "Hujan"
+          ],
+          "jawapan": 0,
+          "nota": "Udara yang bergerak ialah angin.",
+          "ikon": "🍃",
+          "aras": 1
+        },
+        {
+          "id": "udr-04",
+          "sp": "9.2.3",
+          "jenis": "mcq",
+          "soalan": "Bagaimanakah kita tahu udara berada di sekeliling kita?",
+          "pilihan": [
+            "Kita dapat merasainya",
+            "Kita dapat melihatnya",
+            "Kita dapat mendengarnya selalu"
+          ],
+          "jawapan": 0,
+          "nota": "Udara tidak kelihatan tetapi boleh dirasai.",
+          "ikon": "🌬️",
+          "aras": 2
+        },
+        {
+          "id": "udr-05",
+          "sp": "9.2.2",
+          "jenis": "mcq",
+          "soalan": "Gas manakah yang diperlukan oleh manusia untuk bernafas?",
+          "pilihan": [
+            "Oksigen",
+            "Karbon dioksida",
+            "Karbon"
+          ],
+          "jawapan": 0,
+          "nota": "Manusia memerlukan oksigen untuk bernafas.",
+          "ikon": "🫁",
+          "aras": 2
+        },
+        {
+          "id": "udr-06",
+          "sp": "9.2.2",
+          "jenis": "mcq",
+          "soalan": "Udara terdiri daripada beberapa jenis gas. Antaranya ialah:",
+          "pilihan": [
+            "Oksigen dan karbon dioksida",
+            "Besi dan kayu",
+            "Gula dan garam"
+          ],
+          "jawapan": 0,
+          "nota": "Udara mengandungi oksigen dan karbon dioksida.",
+          "ikon": "🔬",
+          "aras": 3
+        },
+        {
+          "id": "udr-07",
+          "sp": "9.2.1",
+          "jenis": "mcq",
+          "soalan": "Benda hidup memerlukan udara untuk apa?",
+          "pilihan": [
+            "Bernafas",
+            "Bermain",
+            "Berdiri"
+          ],
+          "jawapan": 0,
+          "nota": "Semua benda hidup perlu bernafas.",
+          "ikon": "🫁",
+          "aras": 1
+        },
+        {
+          "id": "udr-08",
+          "sp": "9.2.4",
+          "jenis": "betul_salah",
+          "soalan": "Udara juga terdapat di dalam air.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Ikan bernafas menggunakan udara dalam air.",
+          "ikon": "🐠",
+          "aras": 2
+        },
+        {
+          "id": "udr-09",
+          "sp": "9.2.4",
+          "jenis": "betul_salah",
+          "soalan": "Udara juga terdapat di dalam tanah.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 0,
+          "nota": "Cacing hidup di dalam tanah yang mengandungi udara.",
+          "ikon": "🪱",
+          "aras": 2
+        },
+        {
+          "id": "udr-10",
+          "sp": "9.2.5",
+          "jenis": "gambar",
+          "soalan": "Alat manakah menggunakan udara yang bergerak?",
+          "pilihan": [
+            "🎡 kincir angin",
+            "🪞 cermin",
+            "📚 buku"
+          ],
+          "jawapan": 0,
+          "nota": "Kincir angin bergerak dengan bantuan angin.",
+          "ikon": "🎡",
+          "aras": 2
+        },
+        {
+          "id": "udr-11",
+          "sp": "9.2.5",
+          "jenis": "mcq",
+          "soalan": "Kapal layar boleh bergerak kerana apa?",
+          "pilihan": [
+            "Ditiup angin",
+            "Ditarik batu",
+            "Ditolak cahaya"
+          ],
+          "jawapan": 0,
+          "nota": "Angin menggerakkan kapal layar.",
+          "ikon": "⛵",
+          "aras": 2
+        },
+        {
+          "id": "udr-12",
+          "sp": "9.2.5",
+          "jenis": "mcq",
+          "soalan": "Apakah keburukan udara yang bergerak terlalu kuat?",
+          "pilihan": [
+            "Pokok boleh tumbang",
+            "Pokok menjadi lebih tinggi",
+            "Cuaca menjadi lebih sejuk sahaja"
+          ],
+          "jawapan": 0,
+          "nota": "Angin yang terlalu kuat boleh merosakkan benda.",
+          "ikon": "🌪️",
+          "aras": 3
+        }
+      ]
+    },
+    {
+      "id": "teknologi",
+      "kod": "10.0",
+      "nama": "Teknologi",
+      "bidang": "Teknologi dan Kehidupan Lestari",
+      "ikon": "🧱",
+      "warna": "#8D6E63",
+      "soalan": [
+        {
+          "id": "tek-01",
+          "sp": "10.1.1",
+          "jenis": "mcq",
+          "soalan": "Apakah yang dimaksudkan dengan set binaan?",
+          "pilihan": [
+            "Set komponen yang boleh membina beberapa model",
+            "Set buku untuk membaca",
+            "Set makanan untuk dimakan"
+          ],
+          "jawapan": 0,
+          "nota": "Set binaan boleh membina beberapa model.",
+          "ikon": "🧱",
+          "aras": 2
+        },
+        {
+          "id": "tek-02",
+          "sp": "10.1.2",
+          "jenis": "mcq",
+          "soalan": "Apakah kegunaan manual bergambar?",
+          "pilihan": [
+            "Sebagai panduan untuk membina model",
+            "Sebagai buku cerita",
+            "Sebagai buku latihan menulis"
+          ],
+          "jawapan": 0,
+          "nota": "Manual bergambar menunjukkan cara membina.",
+          "ikon": "📘",
+          "aras": 2
+        },
+        {
+          "id": "tek-03",
+          "sp": "10.1.2",
+          "jenis": "mcq",
+          "soalan": "Sebelum memasang komponen, apakah yang perlu kamu lakukan?",
+          "pilihan": [
+            "Mengenal pasti komponen mengikut manual",
+            "Membuang komponen yang kecil",
+            "Menyorok komponen di bawah meja"
+          ],
+          "jawapan": 0,
+          "nota": "Kenal pasti komponen dahulu.",
+          "ikon": "🔍",
+          "aras": 2
+        },
+        {
+          "id": "tek-04",
+          "sp": "10.1.3",
+          "jenis": "mcq",
+          "soalan": "Semasa memasang komponen, apakah yang perlu kita ikut?",
+          "pilihan": [
+            "Langkah dalam manual bergambar",
+            "Cara rakan kita sahaja",
+            "Cara sendiri tanpa melihat manual"
+          ],
+          "jawapan": 0,
+          "nota": "Ikut langkah dalam manual bergambar.",
+          "ikon": "🖼️",
+          "aras": 2
+        },
+        {
+          "id": "tek-05",
+          "sp": "10.1.4",
+          "jenis": "betul_salah",
+          "soalan": "Kita tidak boleh mencipta binaan baharu daripada set binaan.",
+          "pilihan": [
+            "Betul",
+            "Salah"
+          ],
+          "jawapan": 1,
+          "nota": "Kita boleh mencipta binaan baharu.",
+          "ikon": "✨",
+          "aras": 2
+        },
+        {
+          "id": "tek-06",
+          "sp": "10.1.4",
+          "jenis": "mcq",
+          "soalan": "Binaan baharu yang kita cipta mestilah boleh apa?",
+          "pilihan": [
+            "Dijelaskan fungsinya",
+            "Disimpan selama-lamanya tanpa dibuka",
+            "Dibuang ke dalam tong sampah"
+          ],
+          "jawapan": 0,
+          "nota": "Binaan baharu mesti boleh dijelaskan fungsinya.",
+          "ikon": "💬",
+          "aras": 3
+        },
+        {
+          "id": "tek-07",
+          "sp": "10.1.5",
+          "jenis": "mcq",
+          "soalan": "Selepas membuka hasil binaan, komponen perlu disimpan di mana?",
+          "pilihan": [
+            "Di dalam bekas penyimpanan mengikut urutan",
+            "Di dalam poket seluar",
+            "Di atas lantai kelas"
+          ],
+          "jawapan": 0,
+          "nota": "Komponen disimpan mengikut urutan dalam bekas.",
+          "ikon": "📦",
+          "aras": 2
+        },
+        {
+          "id": "tek-08",
+          "sp": "10.1.5",
+          "jenis": "mcq",
+          "soalan": "Mengapakah komponen perlu disimpan dengan betul?",
+          "pilihan": [
+            "Supaya tidak hilang dan mudah digunakan semula",
+            "Supaya komponen menjadi lebih besar",
+            "Supaya komponen berubah warna"
+          ],
+          "jawapan": 0,
+          "nota": "Simpanan yang betul menjaga komponen.",
+          "ikon": "🔍",
+          "aras": 3
+        }
+      ]
+    }
+  ]
+}

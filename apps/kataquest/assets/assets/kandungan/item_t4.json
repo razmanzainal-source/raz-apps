@@ -1,0 +1,775 @@
+[
+  {
+    "id": "t4.tb.imb.01",
+    "objektifId": "o.t4.tb.imbuhan",
+    "kemahiran": "tb.imbuhan",
+    "tahun": 4,
+    "jenis": "isiHuruf",
+    "aras": 2,
+    "arahan": "Isi huruf yang hilang.",
+    "rangsangan": "meny_pukan",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "a",
+      "e",
+      "i"
+    ],
+    "jawapan": [
+      "a"
+    ],
+    "penjelasan": "'Menyapukan' ialah meN- + sapu + -kan.",
+    "petunjuk": [
+      "Kata dasar 'sapu'."
+    ],
+    "pembetulan": "menyapukan"
+  },
+  {
+    "id": "t4.tb.imb.02",
+    "objektifId": "o.t4.tb.imbuhan",
+    "kemahiran": "tb.imbuhan",
+    "tahun": 4,
+    "jenis": "isiHuruf",
+    "aras": 2,
+    "arahan": "Isi huruf yang hilang.",
+    "rangsangan": "members_hkan",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "a",
+      "i",
+      "u"
+    ],
+    "jawapan": [
+      "i"
+    ],
+    "penjelasan": "'Membersihkan' ialah ber- + bersih + -kan.",
+    "petunjuk": [
+      "Kata dasar 'bersih'."
+    ],
+    "pembetulan": "membersihkan"
+  },
+  {
+    "id": "t4.tb.imb.03",
+    "objektifId": "o.t4.tb.imbuhan",
+    "kemahiran": "tb.imbuhan",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 2,
+    "arahan": "Pilih perkataan berimbuhan yang betul.",
+    "rangsangan": "Dia ____ surat itu kepada gurunya.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "menyerahkan",
+      "menyerah",
+      "menyerahi"
+    ],
+    "jawapan": [
+      "menyerahkan"
+    ],
+    "penjelasan": "Apitan meN-...-kan membawa maksud memberi atau melakukan untuk.",
+    "petunjuk": [
+      "Perkataan itu memerlukan apitan -kan."
+    ]
+  },
+  {
+    "id": "t4.tb.imb.04",
+    "objektifId": "o.t4.tb.imbuhan",
+    "kemahiran": "tb.imbuhan",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 3,
+    "arahan": "Tambah apitan meN-...-kan pada perkataan 'serah'.",
+    "rangsangan": "serah",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "menyerahkan"
+    ],
+    "penjelasan": "'Serah' menjadi 'menyerahkan' dengan apitan meN-...-kan.",
+    "petunjuk": [
+      "Huruf 's' bertukar menjadi 'ny'."
+    ]
+  },
+  {
+    "id": "t4.tb.imb.05",
+    "objektifId": "o.t4.tb.imbuhan",
+    "kemahiran": "tb.imbuhan",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 3,
+    "arahan": "Pilih perkataan berimbuhan yang betul.",
+    "rangsangan": "Ali ____ bilik darjah itu setiap pagi.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "membersihkan",
+      "membersih",
+      "dibersihkan"
+    ],
+    "jawapan": [
+      "membersihkan"
+    ],
+    "penjelasan": "Apitan meN-...-kan membentuk 'membersihkan'.",
+    "petunjuk": [
+      "Perkataan itu memerlukan apitan meN-...-kan."
+    ]
+  },
+  {
+    "id": "t4.tb.pb.01",
+    "objektifId": "o.t4.tb.penjodoh_bilangan",
+    "kemahiran": "tb.penjodoh_bilangan",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 1,
+    "arahan": "Pilih penjodoh bilangan yang betul.",
+    "rangsangan": "Dua ____ buku.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "buah",
+      "ekor",
+      "orang"
+    ],
+    "jawapan": [
+      "buah"
+    ],
+    "penjelasan": "'Buah' digunakan untuk buku dan benda besar.",
+    "petunjuk": [
+      "Penjodoh untuk buku."
+    ]
+  },
+  {
+    "id": "t4.tb.pb.02",
+    "objektifId": "o.t4.tb.penjodoh_bilangan",
+    "kemahiran": "tb.penjodoh_bilangan",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 1,
+    "arahan": "Pilih penjodoh bilangan yang betul.",
+    "rangsangan": "Tiga ____ kucing.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "ekor",
+      "buah",
+      "helai"
+    ],
+    "jawapan": [
+      "ekor"
+    ],
+    "penjelasan": "'Ekor' digunakan untuk haiwan.",
+    "petunjuk": [
+      "Penjodoh untuk haiwan."
+    ]
+  },
+  {
+    "id": "t4.tb.pb.03",
+    "objektifId": "o.t4.tb.penjodoh_bilangan",
+    "kemahiran": "tb.penjodoh_bilangan",
+    "tahun": 4,
+    "jenis": "isiHuruf",
+    "aras": 2,
+    "arahan": "Isi huruf yang hilang.",
+    "rangsangan": "se_elai kertas",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "g",
+      "h",
+      "k"
+    ],
+    "jawapan": [
+      "h"
+    ],
+    "penjelasan": "'Sehelai' ialah penjodoh bilangan untuk kertas.",
+    "petunjuk": [
+      "Kertas nipis dan lebar."
+    ],
+    "pembetulan": "sehelai kertas"
+  },
+  {
+    "id": "t4.tb.pb.04",
+    "objektifId": "o.t4.tb.penjodoh_bilangan",
+    "kemahiran": "tb.penjodoh_bilangan",
+    "tahun": 4,
+    "jenis": "pilihRalat",
+    "aras": 2,
+    "arahan": "Ketik perkataan yang salah, kemudian lihat pembetulannya.",
+    "rangsangan": "Ibu membeli dua ekor baju.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "ekor"
+    ],
+    "penjelasan": "Baju menggunakan penjodoh bilangan 'helai'.",
+    "petunjuk": [
+      "'Ekor' hanya untuk haiwan."
+    ],
+    "pembetulan": "helai"
+  },
+  {
+    "id": "t4.tb.pb.05",
+    "objektifId": "o.t4.tb.penjodoh_bilangan",
+    "kemahiran": "tb.penjodoh_bilangan",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 2,
+    "arahan": "Pilih penjodoh bilangan yang betul.",
+    "rangsangan": "Se____ kerusi kayu itu telah dibaiki.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "buah",
+      "batang",
+      "keping"
+    ],
+    "jawapan": [
+      "buah"
+    ],
+    "penjelasan": "'Sebuah' digunakan untuk kerusi.",
+    "petunjuk": [
+      "Kerusi menggunakan penjodoh bilangan 'buah'."
+    ]
+  },
+  {
+    "id": "t4.ej.eb.01",
+    "objektifId": "o.t4.ej.ejaan_betul",
+    "kemahiran": "ej.ejaan_betul",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 2,
+    "arahan": "Taip perkataan yang disebut oleh guru.",
+    "rangsangan": "Guru menyebut: perkhidmatan",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "perkhidmatan"
+    ],
+    "penjelasan": "'Perkhidmatan' dieja p-e-r-k-h-i-d-m-a-t-a-n.",
+    "petunjuk": [
+      "Terdapat 'kh' selepas 'per'."
+    ]
+  },
+  {
+    "id": "t4.ej.eb.02",
+    "objektifId": "o.t4.ej.ejaan_betul",
+    "kemahiran": "ej.ejaan_betul",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 2,
+    "arahan": "Taip perkataan yang disebut oleh guru.",
+    "rangsangan": "Guru menyebut: tanggungjawab",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "tanggungjawab"
+    ],
+    "penjelasan": "'Tanggungjawab' ialah kata majmuk yang ditulis rapat.",
+    "petunjuk": [
+      "Dua perkataan digabung tanpa sempang."
+    ]
+  },
+  {
+    "id": "t4.ej.eb.03",
+    "objektifId": "o.t4.ej.ejaan_betul",
+    "kemahiran": "ej.ejaan_betul",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 1,
+    "arahan": "Pilih ejaan yang betul.",
+    "rangsangan": "Perkataan penghubung sebab:",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "kerana",
+      "keranaa",
+      "kernaa"
+    ],
+    "jawapan": [
+      "kerana"
+    ],
+    "penjelasan": "Ejaan yang betul ialah 'kerana'.",
+    "petunjuk": [
+      "Dua suku kata: ke-ra-na."
+    ]
+  },
+  {
+    "id": "t4.ej.eb.04",
+    "objektifId": "o.t4.ej.ejaan_betul",
+    "kemahiran": "ej.ejaan_betul",
+    "tahun": 4,
+    "jenis": "pilihRalat",
+    "aras": 2,
+    "arahan": "Ketik perkataan yang salah, kemudian lihat pembetulannya.",
+    "rangsangan": "Kerana hujan, kami tidak pergi berkemah.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "berkemah"
+    ],
+    "penjelasan": "Ejaan yang betul ialah 'berkhemah'.",
+    "petunjuk": [
+      "Terdapat 'kh' dalam perkataan itu."
+    ],
+    "pembetulan": "berkhemah"
+  },
+  {
+    "id": "t4.ej.kg.01",
+    "objektifId": "o.t4.ej.kata_ganda",
+    "kemahiran": "ej.kata_ganda",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 2,
+    "arahan": "Pilih kata ganda separa yang betul.",
+    "rangsangan": "Orang yang datang ke majlis:",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "tetamu",
+      "tamu-tamu",
+      "tamutamu"
+    ],
+    "jawapan": [
+      "tetamu"
+    ],
+    "penjelasan": "'Tetamu' ialah kata ganda separa bagi 'tamu'.",
+    "petunjuk": [
+      "Hanya suku kata pertama diulang."
+    ]
+  },
+  {
+    "id": "t4.ej.kg.02",
+    "objektifId": "o.t4.ej.kata_ganda",
+    "kemahiran": "ej.kata_ganda",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 3,
+    "arahan": "Pilih kata ganda berentak yang betul.",
+    "rangsangan": "Pelbagai jenis sayur:",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "sayur-mayur",
+      "sayur mayur",
+      "sayurmayur"
+    ],
+    "jawapan": [
+      "sayur-mayur"
+    ],
+    "penjelasan": "Kata ganda berentak menggunakan tanda sempang.",
+    "petunjuk": [
+      "Gunakan tanda sempang."
+    ]
+  },
+  {
+    "id": "t4.ej.kg.03",
+    "objektifId": "o.t4.ej.kata_ganda",
+    "kemahiran": "ej.kata_ganda",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 3,
+    "arahan": "Taip kata ganda separa bagi 'laki'.",
+    "rangsangan": "laki",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "lelaki"
+    ],
+    "penjelasan": "Kata ganda separa bagi 'laki' ialah 'lelaki'.",
+    "petunjuk": [
+      "Suku kata pertama diulang dengan bunyi 'e'."
+    ]
+  },
+  {
+    "id": "t4.ej.kg.04",
+    "objektifId": "o.t4.ej.kata_ganda",
+    "kemahiran": "ej.kata_ganda",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 1,
+    "arahan": "Pilih ejaan kata ganda yang betul.",
+    "rangsangan": "Ramai kanak-kanak bermain di padang:",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "anak-anak",
+      "anak anak",
+      "anakanak"
+    ],
+    "jawapan": [
+      "anak-anak"
+    ],
+    "penjelasan": "Kata ganda penuh ditulis dengan tanda sempang.",
+    "petunjuk": [
+      "Gunakan tanda sempang."
+    ]
+  },
+  {
+    "id": "t4.sa.fk.01",
+    "objektifId": "o.t4.sa.frasa_kerja",
+    "kemahiran": "sa.frasa_kerja",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 2,
+    "arahan": "Pilih frasa kerja dalam ayat ini.",
+    "rangsangan": "Aminah membaca buku cerita.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "membaca buku cerita",
+      "Aminah",
+      "buku cerita"
+    ],
+    "jawapan": [
+      "membaca buku cerita"
+    ],
+    "penjelasan": "Frasa kerja menerangkan perbuatan yang dilakukan.",
+    "petunjuk": [
+      "Apa yang Aminah lakukan?"
+    ]
+  },
+  {
+    "id": "t4.sa.fk.02",
+    "objektifId": "o.t4.sa.frasa_kerja",
+    "kemahiran": "sa.frasa_kerja",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 3,
+    "arahan": "Pilih frasa kerja.",
+    "rangsangan": "Frasa kerja mengandungi kata kerja dan keterangannya.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "sedang menulis surat",
+      "buku tebal",
+      "sangat rajin"
+    ],
+    "jawapan": [
+      "sedang menulis surat"
+    ],
+    "penjelasan": "'Sedang menulis surat' ialah frasa kerja.",
+    "petunjuk": [
+      "Cari frasa yang mempunyai kata kerja."
+    ]
+  },
+  {
+    "id": "t4.sa.fk.03",
+    "objektifId": "o.t4.sa.frasa_kerja",
+    "kemahiran": "sa.frasa_kerja",
+    "tahun": 4,
+    "jenis": "susun",
+    "aras": 2,
+    "arahan": "Susun perkataan menjadi ayat dengan frasa kerja yang betul.",
+    "rangsangan": "Ketik perkataan mengikut urutan.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "susunan": [
+      [
+        "Ayah",
+        "sedang",
+        "membaiki",
+        "kereta"
+      ]
+    ],
+    "penjelasan": "Frasa kerja 'sedang membaiki kereta' menerangkan perbuatan ayah.",
+    "petunjuk": [
+      "Mulakan dengan subjek."
+    ]
+  },
+  {
+    "id": "t4.sa.fk.04",
+    "objektifId": "o.t4.sa.frasa_kerja",
+    "kemahiran": "sa.frasa_kerja",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 3,
+    "arahan": "Tulis frasa kerja dalam ayat ini.",
+    "rangsangan": "Murid-murid berlari di padang.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "berlari di padang"
+    ],
+    "jawapanDiterima": [
+      "berlari di padang",
+      "berlari"
+    ],
+    "penjelasan": "Frasa kerja ialah 'berlari di padang'.",
+    "petunjuk": [
+      "Ambil bahagian selepas subjek."
+    ]
+  },
+  {
+    "id": "t4.sa.fk.05",
+    "objektifId": "o.t4.sa.frasa_kerja",
+    "kemahiran": "sa.frasa_kerja",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 3,
+    "arahan": "Pilih frasa kerja dalam ayat ini.",
+    "rangsangan": "Murid-murid sedang menyanyi di dewan.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "sedang menyanyi",
+      "Murid-murid",
+      "di dewan"
+    ],
+    "jawapan": [
+      "sedang menyanyi"
+    ],
+    "penjelasan": "'Sedang menyanyi' ialah frasa kerja yang menunjukkan perbuatan.",
+    "petunjuk": [
+      "Frasa kerja mengandungi kata kerja."
+    ]
+  },
+  {
+    "id": "t4.sa.sus.01",
+    "objektifId": "o.t4.sa.susunan",
+    "kemahiran": "sa.susunan",
+    "tahun": 4,
+    "jenis": "susun",
+    "aras": 2,
+    "arahan": "Susun perkataan menjadi ayat aktif.",
+    "rangsangan": "Ketik perkataan mengikut urutan.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "susunan": [
+      [
+        "Aminah",
+        "membaca",
+        "buku",
+        "cerita"
+      ]
+    ],
+    "penjelasan": "Ayat aktif mempunyai pelaku di hadapan.",
+    "petunjuk": [
+      "Mulakan dengan pelaku."
+    ]
+  },
+  {
+    "id": "t4.sa.sus.02",
+    "objektifId": "o.t4.sa.susunan",
+    "kemahiran": "sa.susunan",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 2,
+    "arahan": "Pilih ayat aktif.",
+    "rangsangan": "Ayat aktif menekankan pelaku.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "Ayah mencuci kereta.",
+      "Kereta dicuci oleh ayah.",
+      "Kereta itu sudah dicuci."
+    ],
+    "jawapan": [
+      "Ayah mencuci kereta."
+    ],
+    "penjelasan": "Ayat aktif bermula dengan pelaku 'ayah'.",
+    "petunjuk": [
+      "Cari ayat yang bermula dengan orang."
+    ]
+  },
+  {
+    "id": "t4.sa.sus.03",
+    "objektifId": "o.t4.sa.susunan",
+    "kemahiran": "sa.susunan",
+    "tahun": 4,
+    "jenis": "susun",
+    "aras": 2,
+    "arahan": "Susun perkataan menjadi ayat aktif.",
+    "rangsangan": "Ketik perkataan mengikut urutan.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "susunan": [
+      [
+        "Petani",
+        "menanam",
+        "padi",
+        "di",
+        "sawah"
+      ]
+    ],
+    "penjelasan": "Petani ialah pelaku, menanam padi di sawah ialah predikat.",
+    "petunjuk": [
+      "Mulakan dengan pelaku."
+    ]
+  },
+  {
+    "id": "t4.sa.sus.04",
+    "objektifId": "o.t4.sa.susunan",
+    "kemahiran": "sa.susunan",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 3,
+    "arahan": "Tukar ayat ini kepada ayat aktif.",
+    "rangsangan": "Buku itu dibaca oleh Ali.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "Ali membaca buku itu."
+    ],
+    "jawapanDiterima": [
+      "Ali membaca buku itu.",
+      "Ali membaca buku itu"
+    ],
+    "penjelasan": "Pelaku 'Ali' diletakkan di hadapan dalam ayat aktif.",
+    "petunjuk": [
+      "Mulakan dengan 'Ali'."
+    ]
+  },
+  {
+    "id": "t4.bs.ss.01",
+    "objektifId": "o.t4.bs.susunan_soalan",
+    "kemahiran": "bs.susunan_soalan",
+    "tahun": 4,
+    "jenis": "susun",
+    "aras": 2,
+    "arahan": "Susun perkataan menjadi ayat tanya.",
+    "rangsangan": "Ketik perkataan mengikut urutan.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "susunan": [
+      [
+        "Adakah",
+        "kamu",
+        "sudah",
+        "makan"
+      ]
+    ],
+    "penjelasan": "Soalan ya/tidak boleh dimulakan dengan 'adakah'.",
+    "petunjuk": [
+      "Mulakan dengan 'adakah'."
+    ]
+  },
+  {
+    "id": "t4.bs.ss.02",
+    "objektifId": "o.t4.bs.susunan_soalan",
+    "kemahiran": "bs.susunan_soalan",
+    "tahun": 4,
+    "jenis": "susun",
+    "aras": 2,
+    "arahan": "Susun perkataan menjadi ayat tanya.",
+    "rangsangan": "Ketik perkataan mengikut urutan.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "susunan": [
+      [
+        "Bilakah",
+        "kamu",
+        "akan",
+        "pulang"
+      ]
+    ],
+    "penjelasan": "Bilakah kamu akan pulang? menanyakan masa.",
+    "petunjuk": [
+      "Mulakan dengan kata tanya masa."
+    ]
+  },
+  {
+    "id": "t4.bs.ss.03",
+    "objektifId": "o.t4.bs.susunan_soalan",
+    "kemahiran": "bs.susunan_soalan",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 3,
+    "arahan": "Tulis soalan ya/tidak bagi ayat ini.",
+    "rangsangan": "Ali suka makan durian.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "Adakah Ali suka makan durian?"
+    ],
+    "jawapanDiterima": [
+      "Adakah Ali suka makan durian?",
+      "Adakah Ali suka makan durian"
+    ],
+    "penjelasan": "Soalan ya/tidak boleh dibina dengan 'adakah'.",
+    "petunjuk": [
+      "Letakkan 'adakah' di hadapan."
+    ]
+  },
+  {
+    "id": "t4.bs.ss.04",
+    "objektifId": "o.t4.bs.susunan_soalan",
+    "kemahiran": "bs.susunan_soalan",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 3,
+    "arahan": "Tukar ayat ini menjadi ayat tanya.",
+    "rangsangan": "Kamu mahu ikut.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "Adakah kamu mahu ikut?"
+    ],
+    "jawapanDiterima": [
+      "Adakah kamu mahu ikut?",
+      "Adakah kamu mahu ikut"
+    ],
+    "penjelasan": "'Adakah' di hadapan menjadikan ayat itu soalan.",
+    "petunjuk": [
+      "Gunakan 'adakah'."
+    ]
+  },
+  {
+    "id": "t4.bs.tt.01",
+    "objektifId": "o.t4.bs.tanda_tanya",
+    "kemahiran": "bs.tanda_tanya",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 2,
+    "arahan": "Pilih ayat tanya yang betul.",
+    "rangsangan": "Perhatikan susunan dan tanda baca.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "Siapakah nama pengetua sekolah ini?",
+      "Siapakah nama pengetua sekolah ini.",
+      "Nama pengetua sekolah ini siapakah!"
+    ],
+    "jawapan": [
+      "Siapakah nama pengetua sekolah ini?"
+    ],
+    "penjelasan": "Ayat tanya bermula dengan kata tanya dan berakhir dengan '?'.",
+    "petunjuk": [
+      "Cari ayat yang berakhir dengan tanda tanya."
+    ]
+  },
+  {
+    "id": "t4.bs.tt.02",
+    "objektifId": "o.t4.bs.tanda_tanya",
+    "kemahiran": "bs.tanda_tanya",
+    "tahun": 4,
+    "jenis": "pilih",
+    "aras": 2,
+    "arahan": "Pilih ayat yang menggunakan tanda tanya dengan betul.",
+    "rangsangan": "Tanda tanya hanya digunakan pada ayat tanya.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "pilihan": [
+      "Ke manakah kamu pergi?",
+      "Ke manakah kamu pergi.",
+      "Ke manakah kamu pergi!"
+    ],
+    "jawapan": [
+      "Ke manakah kamu pergi?"
+    ],
+    "penjelasan": "Ayat tanya diakhiri dengan tanda tanya.",
+    "petunjuk": [
+      "Cari '?'."
+    ]
+  },
+  {
+    "id": "t4.bs.tt.03",
+    "objektifId": "o.t4.bs.tanda_tanya",
+    "kemahiran": "bs.tanda_tanya",
+    "tahun": 4,
+    "jenis": "susun",
+    "aras": 2,
+    "arahan": "Susun perkataan menjadi ayat tanya.",
+    "rangsangan": "Ketik perkataan mengikut urutan.",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "susunan": [
+      [
+        "Pukul",
+        "berapakah",
+        "majlis",
+        "akan",
+        "bermula"
+      ]
+    ],
+    "penjelasan": "Pukul berapakah majlis akan bermula? menanyakan waktu.",
+    "petunjuk": [
+      "Mulakan dengan 'pukul berapakah'."
+    ]
+  },
+  {
+    "id": "t4.bs.tt.04",
+    "objektifId": "o.t4.bs.tanda_tanya",
+    "kemahiran": "bs.tanda_tanya",
+    "tahun": 4,
+    "jenis": "taip",
+    "aras": 2,
+    "arahan": "Tambah tanda baca yang betul.",
+    "rangsangan": "Siapakah nama guru kelas kamu",
+    "statusSemakan": "REVIEW_REQUIRED",
+    "jawapan": [
+      "Siapakah nama guru kelas kamu?"
+    ],
+    "penjelasan": "Ayat tanya diakhiri tanda tanya.",
+    "petunjuk": [
+      "Ini soalan."
+    ]
+  }
+]

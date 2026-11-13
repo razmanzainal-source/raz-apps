@@ -1,0 +1,17 @@
+{
+  "nama": "Pek Kandungan KATAQUEST",
+  "versi": "0.1.0",
+  "kurikulumVersi": "KSSR Semakan 2017",
+  "tarikhBina": "2026-11-10",
+  "statusSemakan": "REVIEW_REQUIRED",
+  "fail": [
+    "objektif.json",
+    "item_t1.json",
+    "item_t2.json",
+    "item_t3.json",
+    "item_t4.json",
+    "item_t5.json",
+    "item_t6.json",
+    "cerita.json"
+  ]
+}

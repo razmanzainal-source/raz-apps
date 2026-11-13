@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raz Apps — Preview &amp; Muat Turun</title>
+<meta name="description" content="Koleksi aplikasi Android & iOS oleh Razman Zainal. Cuba terus dalam browser atau muat turun APK.">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="assets/icons/kataquest.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Raz<span>Apps</span></a>
+    <nav class="nav-links">
+      <a href="#apps">Aplikasi</a>
+      <button type="button" class="linkish" data-open="guide">Panduan APK</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="eyebrow">Razman Zainal · Aplikasi pendidikan &amp; permainan</p>
+    <h1>Semua aplikasi saya,<br><em>di satu tempat.</em></h1>
+    <p class="lede">
+      Cuba terus dalam browser — tiada pemasangan diperlukan.
+      Untuk Android, muat turun APK. Untuk iPhone, dapatkan di App Store.
+    </p>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="apps" id="apps">
+    <div class="toolbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <input type="search" id="search" placeholder="Cari aplikasi, subjek atau tahun…" autocomplete="off">
+      </label>
+      <div class="filters" id="filters" role="tablist" aria-label="Tapis mengikut kategori"></div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>Tiada aplikasi sepadan dengan carian anda.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p><strong>Raz Apps</strong> — dibina dengan Flutter. Berfungsi luar talian.</p>
+    <p class="fine">
+      APK ialah versi Android di luar Play Store. Anda mungkin nampak amaran Play Protect —
+      itu normal. <button type="button" class="linkish" data-open="guide">Cara pasang</button>
+    </p>
+  </div>
+</footer>
+
+<!-- ===== Detail modal ===== -->
+<dialog id="detail" class="sheet">
+  <button class="sheet-close" type="button" data-close aria-label="Tutup">&times;</button>
+  <div class="sheet-body" id="detail-body"></div>
+</dialog>
+
+<!-- ===== APK guide ===== -->
+<dialog id="guide" class="sheet">
+  <button class="sheet-close" type="button" data-close aria-label="Tutup">&times;</button>
+  <div class="sheet-body prose">
+    <h2>Cara pasang APK di Android</h2>
+    <p>APK ialah fail pemasangan Android. Anda hanya perlu benarkan pemasangan daripada browser sekali sahaja.</p>
+    <ol>
+      <li>Tekan butang <strong>APK</strong> pada kad aplikasi. Fail akan dimuat turun.</li>
+      <li>Buka fail tersebut (dari notifikasi atau aplikasi <em>Files</em>).</li>
+      <li>Jika muncul amaran, tekan <strong>Settings</strong> → hidupkan <strong>Allow from this source</strong>.</li>
+      <li>Tekan <strong>Install</strong> → <strong>Open</strong>.</li>
+    </ol>
+    <h3>Amaran Play Protect?</h3>
+    <p>
+      Ini muncul untuk semua APK di luar Play Store, bukan tanda aplikasi berbahaya.
+      Tekan <strong>Install anyway</strong> / <strong>Install tanpa mengimbas</strong>.
+      Setiap APK di sini ditandatangani dengan kunci rilis saya sendiri.
+    </p>
+    <h3>Versi Android minimum</h3>
+    <p>Android 6.0 (Marshmallow) ke atas. Jika fail <code>arm64</code> gagal, cuba versi <code>universal</code>.</p>
+    <h3>iPhone?</h3>
+    <p>Aplikasi iOS diedarkan melalui App Store sahaja — tekan butang <strong>App Store</strong> pada kad aplikasi.</p>
+  </div>
+</dialog>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

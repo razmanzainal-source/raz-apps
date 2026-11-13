@@ -1,0 +1,2 @@
+apps/*/canvaskit/*.wasm -text
+*.apk -text
