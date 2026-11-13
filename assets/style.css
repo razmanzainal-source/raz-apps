@@ -22,6 +22,7 @@ body{
   color:var(--text);
   -webkit-font-smoothing:antialiased;
   line-height:1.55;
+  overflow-x:clip;
 }
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
@@ -60,11 +61,10 @@ img{max-width:100%;display:block}
   position:relative;
   max-width:1180px;margin:0 auto;
   padding:96px 24px 64px;
-  overflow:hidden;
 }
 .hero-glow{
-  position:absolute;left:50%;top:-180px;transform:translateX(-50%);
-  width:min(1500px,150vw);height:720px;
+  position:absolute;left:50%;top:-200px;transform:translateX(-50%);
+  width:min(1400px,120vw);height:760px;
   background:
     radial-gradient(closest-side at 38% 48%, rgba(124,140,255,.30), transparent 100%),
     radial-gradient(closest-side at 66% 26%, rgba(64,224,208,.15), transparent 100%),
