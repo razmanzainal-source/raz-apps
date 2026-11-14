@@ -288,7 +288,8 @@
       "icon": "assets/icons/hidup-plus.png",
       "shots": [
         "assets/shots/hidup-plus-1.png",
-        "assets/shots/hidup-plus-2.png"
+        "assets/shots/hidup-plus-2.png",
+        "assets/shots/hidup-plus-3.png"
       ],
       "category": "kesihatan",
       "tags": [
