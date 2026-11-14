@@ -36,8 +36,7 @@
       "icon": "assets/icons/matematik-tahun3.png",
       "shots": [
         "assets/shots/matematik-tahun3-1.png",
-        "assets/shots/matematik-tahun3-2.png",
-        "assets/shots/matematik-tahun3-3.png"
+        "assets/shots/matematik-tahun3-2.png"
       ],
       "category": "pendidikan",
       "tags": [
@@ -85,8 +84,7 @@
       "icon": "assets/icons/sains-tahun5.png",
       "shots": [
         "assets/shots/sains-tahun5-1.png",
-        "assets/shots/sains-tahun5-2.png",
-        "assets/shots/sains-tahun5-3.png"
+        "assets/shots/sains-tahun5-2.png"
       ],
       "category": "pendidikan",
       "tags": [
@@ -139,11 +137,11 @@
         "6 subjek",
         "Luar talian"
       ],
-      "version": "2.0.0",
+      "version": "2.1.0",
       "web": "apps/ulangkaji-upkk/",
       "apk": {
-        "file": "ulangkaji-upkk-2.0.0.apk",
-        "size": "153 MB",
+        "file": "ulangkaji-upkk-2.1.0.apk",
+        "size": "188 MB",
         "label": "arm64"
       },
       "ios": "https://apps.apple.com/my/app/id6830672652",
@@ -156,6 +154,8 @@
       "description": "Latihan kira bentuk lazim, sifir dan lembaran kerja bercetak. Ada juga arena matematik untuk lawan rakan. Luar talian.",
       "icon": "assets/icons/papan-kira.png",
       "shots": [
+        "assets/shots/papan-kira-1.png",
+        "assets/shots/papan-kira-2.png",
         "assets/shots/papan-kira-01-practice.png",
         "assets/shots/papan-kira-02-arena.png",
         "assets/shots/papan-kira-03-progress.png",
@@ -214,7 +214,8 @@
       "description": "Aplikasi komunikasi AAC (Augmentative and Alternative Communication) untuk individu tanpa suara. Papan gambar, suara sintetik dan simpankan frasa — luar talian.",
       "icon": "assets/icons/voiceless.png",
       "shots": [
-        "assets/shots/voiceless-1.png"
+        "assets/shots/voiceless-1.png",
+        "assets/shots/voiceless-2.png"
       ],
       "category": "alat",
       "tags": [
@@ -287,8 +288,7 @@
       "icon": "assets/icons/hidup-plus.png",
       "shots": [
         "assets/shots/hidup-plus-1.png",
-        "assets/shots/hidup-plus-2.png",
-        "assets/shots/hidup-plus-3.png"
+        "assets/shots/hidup-plus-2.png"
       ],
       "category": "kesihatan",
       "tags": [
@@ -296,11 +296,11 @@
         "Kesejahteraan",
         "AI coach"
       ],
-      "version": "0.4.9",
+      "version": "0.8.118",
       "web": null,
       "apk": {
-        "file": "hidup-plus-0.4.9.apk",
-        "size": "29 MB",
+        "file": "hidup-plus-0.8.118.apk",
+        "size": "80 MB",
         "label": "arm64"
       },
       "ios": null,
