@@ -37,7 +37,7 @@ function actionButtons(app, compact = false) {
 
   if (app.web) {
     out.push(`<a class="btn btn-primary" href="${esc(app.web)}" target="_blank" rel="noopener">
-      ${Icons.play} Cuba dalam browser
+      ${Icons.play} Browser
     </a>`);
   }
 
