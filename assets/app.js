@@ -5,7 +5,8 @@ const Icons = {
   play: '<svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor" stroke="none"/></svg>',
   download: '<svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>',
   apple: '<svg viewBox="0 0 24 24"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.7-1.8-3.3-1.8-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.4 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1 8.6.7 1 1.5 2.1 2.6 2 1-.1 1.4-.7 2.7-.7 1.2 0 1.6.7 2.7.7 1.1 0 1.9-1 2.6-2 .8-1.2 1.1-2.3 1.2-2.4-.1 0-2.5-1-2.5-3.7zM14.3 5.7c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z" fill="currentColor" stroke="none"/></svg>',
-  info: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>'
+  info: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>',
+  share: '<svg viewBox="0 0 24 24"><path d="M12 16V4m0 0L8 8m4-4 4 4M5 14v5h14v-5"/></svg>'
 };
 
 const CATEGORY_LABEL = {
@@ -54,11 +55,116 @@ function actionButtons(app, compact = false) {
     </a>`);
   }
 
+  if (!compact) {
+    out.push(`<button class="btn btn-ghost" type="button" data-share="${esc(app.slug)}">
+      ${Icons.share} Kongsi
+    </button>`);
+  }
+
   if (!out.length) {
     out.push(`<span class="btn btn-ghost" style="pointer-events:none">Akan datang</span>`);
   }
 
   return out.join('');
+}
+
+/* ---------- kongsi ---------- */
+
+function shareMessage(app) {
+  const lines = [`📚 *${app.name}* — ${app.tagline}`, '', app.description];
+
+  const where = [];
+  if (app.apk) where.push('Android (APK)');
+  if (app.ios) where.push('iPhone (App Store)');
+  if (app.web) where.push('cuba terus dalam browser');
+
+  if (where.length) lines.push('', `📲 ${where.join(' · ')}`);
+  lines.push('✅ Percuma · berfungsi luar talian');
+  return lines.join('\n');
+}
+
+function shareLink(app) {
+  return `${location.origin}${location.pathname}#${app.slug}`;
+}
+
+function siteMessage() {
+  return [
+    '📱 *Raz Apps* — semua aplikasi saya di satu tempat',
+    '',
+    'Aplikasi pendidikan & permainan untuk murid, guru dan ibu bapa.',
+    'Percuma · berfungsi luar talian · Android & iPhone.',
+    '',
+    'Cuba dalam browser atau muat turun APK 👇'
+  ].join('\n');
+}
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+}
+
+function openShare({ title, text, url }) {
+  const dlg = $('#share');
+  const body = `${text}\n\n${url}`;
+  $('#share-preview').textContent = body;
+
+  const enc = encodeURIComponent;
+  $('#share-wa').href = `https://wa.me/?text=${enc(body)}`;
+  $('#share-tg').href = `https://t.me/share/url?url=${enc(url)}&text=${enc(text)}`;
+  $('#share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`;
+  $('#share-x').href = `https://twitter.com/intent/tweet?text=${enc(text)}&url=${enc(url)}`;
+
+  const nativeBtn = $('#share-native');
+  if (navigator.share) {
+    nativeBtn.hidden = false;
+    nativeBtn.onclick = () => navigator.share({ title, text, url }).catch(() => {});
+  } else {
+    nativeBtn.hidden = true;
+  }
+
+  const copyBtn = $('#share-copy');
+  copyBtn.classList.remove('copied');
+  copyBtn.lastChild.textContent = ' Salin link';
+  copyBtn.onclick = async () => {
+    const ok = await copyText(body);
+    if (ok) {
+      copyBtn.classList.add('copied');
+      copyBtn.lastChild.textContent = ' Link disalin!';
+      setTimeout(() => {
+        copyBtn.classList.remove('copied');
+        copyBtn.lastChild.textContent = ' Salin link';
+      }, 2000);
+    }
+  };
+
+  dlg.showModal();
+}
+
+function shareApp(slug) {
+  const app = APP_LIST.find((a) => a.slug === slug);
+  if (!app) return;
+  openShare({ title: app.name, text: shareMessage(app), url: shareLink(app) });
+}
+
+function shareSite() {
+  openShare({
+    title: 'Raz Apps',
+    text: siteMessage(),
+    url: `${location.origin}${location.pathname}`
+  });
 }
 
 function cardHtml(app) {
@@ -70,6 +176,8 @@ function cardHtml(app) {
 
   return `
   <article class="card" data-slug="${esc(app.slug)}">
+    <button class="card-share" type="button" data-share="${esc(app.slug)}"
+            aria-label="Kongsi ${esc(app.name)}" title="Kongsi">${Icons.share}</button>
     <div class="card-head">
       <img class="card-icon" src="${esc(app.icon)}" alt="" loading="lazy"
            onerror="this.style.visibility='hidden'">
@@ -100,7 +208,7 @@ function render() {
 
   $$('.card').forEach((el) => {
     el.addEventListener('click', (e) => {
-      if (e.target.closest('a')) return; // biar butang buat kerja sendiri
+      if (e.target.closest('a, button')) return; // biar butang buat kerja sendiri
       openDetail(el.dataset.slug);
     });
   });
@@ -162,12 +270,28 @@ function openDetail(slug) {
   `;
 
   const dlg = $('#detail');
-  dlg.showModal();
+  if (!dlg.open) dlg.showModal();
   dlg.scrollTop = 0;
+
+  // URL boleh dikongsi: .../#slug
+  if (location.hash !== `#${app.slug}`) {
+    history.replaceState(null, '', `#${app.slug}`);
+  }
+}
+
+function openFromHash() {
+  const slug = decodeURIComponent(location.hash.replace(/^#/, ''));
+  if (slug && APP_LIST.some((a) => a.slug === slug)) openDetail(slug);
 }
 
 function wireDialogs() {
   document.addEventListener('click', (e) => {
+    const shareBtn = e.target.closest('[data-share]');
+    if (shareBtn) {
+      e.preventDefault();
+      shareApp(shareBtn.dataset.share);
+      return;
+    }
     const opener = e.target.closest('[data-open]');
     if (opener) {
       const dlg = document.getElementById(opener.dataset.open);
@@ -181,6 +305,11 @@ function wireDialogs() {
   $$('dialog').forEach((dlg) => {
     dlg.addEventListener('click', (e) => {
       if (e.target === dlg) dlg.close(); // klik backdrop
+    });
+    dlg.addEventListener('close', () => {
+      if (dlg.id === 'detail' && location.hash) {
+        history.replaceState(null, '', location.pathname + location.search);
+      }
     });
   });
 }
@@ -206,9 +335,15 @@ async function init() {
 
   if (CONFIG.title) document.title = `${CONFIG.title} — Preview & Muat Turun`;
 
+  const siteBtn = $('#share-site');
+  if (siteBtn) siteBtn.addEventListener('click', shareSite);
+
+  window.addEventListener('hashchange', openFromHash);
+
   renderStats();
   renderFilters();
   render();
+  openFromHash();
 }
 
 init();

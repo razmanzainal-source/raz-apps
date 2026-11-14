@@ -6,6 +6,18 @@
 <title>Raz Apps — Preview &amp; Muat Turun</title>
 <meta name="description" content="Koleksi aplikasi Android & iOS oleh Razman Zainal. Cuba terus dalam browser atau muat turun APK.">
 <meta name="theme-color" content="#0b0d12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Raz Apps">
+<meta property="og:title" content="Raz Apps — aplikasi pendidikan &amp; permainan">
+<meta property="og:description" content="12 aplikasi untuk murid, guru dan ibu bapa. Percuma, berfungsi luar talian. Cuba dalam browser atau muat turun APK.">
+<meta property="og:url" content="https://raz-apps.pages.dev/">
+<meta property="og:image" content="https://raz-apps.pages.dev/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Raz Apps — aplikasi pendidikan &amp; permainan">
+<meta name="twitter:description" content="12 aplikasi untuk murid, guru dan ibu bapa. Percuma, luar talian.">
+<meta name="twitter:image" content="https://raz-apps.pages.dev/assets/og-cover.png">
 <link rel="icon" href="assets/icons/kataquest.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -33,6 +45,12 @@
       Untuk Android, muat turun APK. Untuk iPhone, dapatkan di App Store.
     </p>
     <div class="stats" id="stats"></div>
+    <div class="hero-actions">
+      <button type="button" class="btn btn-secondary" id="share-site">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L8 8m4-4 4 4M5 14v5h14v-5"/></svg>
+        Kongsi laman ini
+      </button>
+    </div>
   </section>
 
   <section class="apps" id="apps">
@@ -107,6 +125,35 @@
     <p>Android 6.0 (Marshmallow) ke atas. Jika fail <code>arm64</code> gagal, cuba versi <code>universal</code>.</p>
     <h3>iPhone?</h3>
     <p>Aplikasi iOS diedarkan melalui App Store sahaja — tekan butang <strong>App Store</strong> pada kad aplikasi.</p>
+  </div>
+</dialog>
+
+<!-- ===== Share sheet ===== -->
+<dialog id="share" class="sheet share-sheet">
+  <button class="sheet-close" type="button" data-close aria-label="Tutup">&times;</button>
+  <div class="sheet-body">
+    <h2 class="share-heading">Kongsi</h2>
+    <p class="share-preview" id="share-preview"></p>
+    <div class="share-grid">
+      <a class="share-item" id="share-wa" target="_blank" rel="noopener">
+        <span class="si si-wa" aria-hidden="true">💬</span> WhatsApp
+      </a>
+      <a class="share-item" id="share-tg" target="_blank" rel="noopener">
+        <span class="si si-tg" aria-hidden="true">✈️</span> Telegram
+      </a>
+      <a class="share-item" id="share-fb" target="_blank" rel="noopener">
+        <span class="si si-fb" aria-hidden="true">👍</span> Facebook
+      </a>
+      <a class="share-item" id="share-x" target="_blank" rel="noopener">
+        <span class="si si-x" aria-hidden="true">✖️</span> X
+      </a>
+      <button class="share-item" type="button" id="share-copy">
+        <span class="si" aria-hidden="true">📋</span> Salin link
+      </button>
+      <button class="share-item" type="button" id="share-native" hidden>
+        <span class="si" aria-hidden="true">📤</span> Lain-lain
+      </button>
+    </div>
   </div>
 </dialog>
 

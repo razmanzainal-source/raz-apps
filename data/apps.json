@@ -22,10 +22,10 @@
         "Tahun 1–6",
         "Luar talian"
       ],
-      "version": "1.0.0",
+      "version": "1.0",
       "web": "apps/kataquest/",
       "apk": null,
-      "ios": null,
+      "ios": "https://apps.apple.com/my/app/id6832860663",
       "featured": true
     },
     {

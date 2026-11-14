@@ -108,6 +108,8 @@ img{max-width:100%;display:block}
 .stat strong{color:var(--text);font-weight:650}
 .stat + .stat{margin-left:0}
 
+.hero-actions{position:relative;display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+
 /* ---------- toolbar ---------- */
 .apps{max-width:1180px;margin:0 auto;padding:0 24px 100px}
 .toolbar{
@@ -256,6 +258,48 @@ img{max-width:100%;display:block}
   .support-qr{align-self:center}
   .support-qr img{width:200px;height:200px}
 }
+
+/* ---------- share ---------- */
+.card-share{
+  position:absolute;top:14px;right:14px;
+  width:32px;height:32px;border-radius:9px;
+  display:grid;place-items:center;
+  color:var(--dim);
+  border:1px solid transparent;
+  transition:.15s;
+}
+.card-share svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card-share:hover{color:var(--text);background:rgba(255,255,255,.06);border-color:var(--line)}
+
+.share-sheet{width:min(460px,calc(100vw - 32px))}
+.share-heading{margin:0 0 14px;font-size:1.2rem;letter-spacing:-.01em}
+.share-preview{
+  margin:0;
+  white-space:pre-line;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px;
+  font-size:.82rem;
+  color:var(--muted);
+  max-height:210px;
+  overflow:auto;
+}
+.share-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.share-item{
+  display:flex;align-items:center;gap:9px;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--card);
+  color:var(--text);
+  font-size:.88rem;font-weight:600;
+  text-align:left;
+  transition:.15s;
+}
+.share-item:hover{background:var(--card-hover);border-color:var(--line-strong)}
+.share-item .si{font-size:1.05rem;line-height:1}
+.share-item.copied{color:#6ee7d7;border-color:rgba(110,231,215,.45)}
 
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--line);background:var(--bg-soft)}
