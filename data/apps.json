@@ -24,7 +24,11 @@
       ],
       "version": "1.0",
       "web": "apps/kataquest/",
-      "apk": null,
+      "apk": {
+        "file": "kataquest-1.0.0.apk",
+        "size": "53 MB",
+        "label": "universal"
+      },
       "ios": "https://apps.apple.com/my/app/id6832860663",
       "featured": true
     },
@@ -72,7 +76,11 @@
       ],
       "version": "1.0.0",
       "web": "apps/sains-tahun2/",
-      "apk": null,
+      "apk": {
+        "file": "sains-tahun2-1.0.0.apk",
+        "size": "64 MB",
+        "label": "universal"
+      },
       "ios": null,
       "featured": false
     },
@@ -94,7 +102,11 @@
       ],
       "version": "1.0.0",
       "web": "apps/sains-tahun5/",
-      "apk": null,
+      "apk": {
+        "file": "sains-tahun5-1.0.0.apk",
+        "size": "87 MB",
+        "label": "universal"
+      },
       "ios": null,
       "featured": false
     },
@@ -117,7 +129,11 @@
       ],
       "version": "1.0.0",
       "web": "apps/sejarah-tahun5/",
-      "apk": null,
+      "apk": {
+        "file": "sejarah-tahun5-1.0.0.apk",
+        "size": "104 MB",
+        "label": "universal"
+      },
       "ios": null,
       "featured": false
     },
@@ -276,7 +292,11 @@
       ],
       "version": "1.0.0",
       "web": "apps/volt-arena/",
-      "apk": null,
+      "apk": {
+        "file": "volt-arena-1.0.0.apk",
+        "size": "49 MB",
+        "label": "universal"
+      },
       "ios": null,
       "featured": false
     },

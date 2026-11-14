@@ -167,6 +167,34 @@ function shareSite() {
   });
 }
 
+function allAppsMessage() {
+  const lines = [
+    '📱 *RAZ APPS* — semua aplikasi dalam satu tempat',
+    '',
+    'Aplikasi pendidikan & permainan. Percuma, berfungsi luar talian.',
+    ''
+  ];
+
+  APP_LIST.forEach((app, i) => {
+    lines.push(`${i + 1}. *${app.name}* — ${app.tagline}`);
+    if (app.apk) lines.push(`   🤖 APK: ${releaseUrl(app.apk.file)}`);
+    if (app.ios) lines.push(`   🍎 iPhone: ${app.ios}`);
+    if (app.web) lines.push(`   🌐 Web: ${location.origin}/apps/${app.slug}/`);
+    lines.push('');
+  });
+
+  lines.push('📌 Semua app: ' + `${location.origin}${location.pathname}`);
+  return lines.join('\n');
+}
+
+function shareAll() {
+  openShare({
+    title: 'Raz Apps — semua aplikasi',
+    text: allAppsMessage(),
+    url: `${location.origin}${location.pathname}`
+  });
+}
+
 function cardHtml(app) {
   const tags = (app.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join('');
   const meta = [`v${esc(app.version || '1.0.0')}`];
@@ -337,6 +365,9 @@ async function init() {
 
   const siteBtn = $('#share-site');
   if (siteBtn) siteBtn.addEventListener('click', shareSite);
+
+  const allBtn = $('#share-all');
+  if (allBtn) allBtn.addEventListener('click', shareAll);
 
   window.addEventListener('hashchange', openFromHash);
 
