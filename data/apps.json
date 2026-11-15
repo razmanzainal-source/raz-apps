@@ -317,6 +317,31 @@
       "ios": null,
       "featured": false,
       "comingSoon": true
+    },
+    {
+      "slug": "chaos-factory",
+      "name": "Chaos Factory",
+      "tagline": "Pertahanan kilang neon, roguelite",
+      "description": "Tower-defense roguelite luar talian: 10 gelombang, 8 jenis meriam, 9 relik draf dan 2 bos. Dibina dengan Godot — potret, untuk Android & iOS.",
+      "icon": "assets/icons/chaos-factory.png",
+      "shots": [
+        "assets/shots/chaos-factory-1.png"
+      ],
+      "category": "permainan",
+      "tags": [
+        "Pertahanan",
+        "Roguelite",
+        "Luar talian"
+      ],
+      "version": "1.0.8",
+      "web": null,
+      "apk": {
+        "file": "chaos-factory-1.0.8.apk",
+        "size": "77 MB",
+        "label": "universal"
+      },
+      "ios": null,
+      "featured": false
     }
   ]
 }
