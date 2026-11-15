@@ -183,10 +183,10 @@
         "Sifir",
         "Luar talian"
       ],
-      "version": "4.24.0",
+      "version": "1.2.0",
       "web": "apps/papan-kira/",
       "apk": {
-        "file": "papan-kira-4.24.0.apk",
+        "file": "papan-kira-1.2.0.apk",
         "size": "72 MB",
         "label": "universal"
       },
