@@ -24,6 +24,24 @@ let query = '';
 const $  = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
+/* ---------- kaunter ringan (tanpa IP/cookie) ---------- */
+function track(type, slug = '') {
+  try {
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+    const body = JSON.stringify({ t: type, s: slug });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon('/api/hit', new Blob([body], { type: 'application/json' }));
+    } else {
+      fetch('/api/hit', {
+        method: 'POST',
+        body,
+        keepalive: true,
+        headers: { 'content-type': 'application/json' }
+      }).catch(() => {});
+    }
+  } catch { /* diam sahaja */ }
+}
+
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => (
   { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
 ));
@@ -40,7 +58,8 @@ function actionButtons(app, compact = false) {
   }
 
   if (app.web) {
-    out.push(`<a class="btn btn-primary" href="${esc(app.web)}" target="_blank" rel="noopener">
+    out.push(`<a class="btn btn-primary" href="${esc(app.web)}" target="_blank" rel="noopener"
+      data-track="browser" data-slug="${esc(app.slug)}">
       ${Icons.play} Browser
     </a>`);
   }
@@ -48,13 +67,15 @@ function actionButtons(app, compact = false) {
   if (app.apk) {
     const label = compact ? 'APK' : `Muat turun APK${app.apk.size ? ` · ${esc(app.apk.size)}` : ''}`;
     out.push(`<a class="btn btn-secondary" href="${esc(releaseUrl(app.apk.file))}"
-      download rel="noopener" title="Android · ${esc(app.apk.label || 'APK')}">
+      download rel="noopener" title="Android · ${esc(app.apk.label || 'APK')}"
+      data-track="apk" data-slug="${esc(app.slug)}">
       ${Icons.download} ${label}
     </a>`);
   }
 
   if (app.ios) {
-    out.push(`<a class="btn btn-ghost" href="${esc(app.ios)}" target="_blank" rel="noopener">
+    out.push(`<a class="btn btn-ghost" href="${esc(app.ios)}" target="_blank" rel="noopener"
+      data-track="ios" data-slug="${esc(app.slug)}">
       ${Icons.apple} App Store
     </a>`);
   }
@@ -165,10 +186,12 @@ function openShare({ title, text, url }) {
 function shareApp(slug) {
   const app = APP_LIST.find((a) => a.slug === slug);
   if (!app) return;
+  track('share', slug);
   openShare({ title: app.name, text: shareMessage(app), url: shareLink(app) });
 }
 
 function shareSite() {
+  track('share', '');
   openShare({
     title: 'Raz Apps',
     text: siteMessage(),
@@ -202,6 +225,7 @@ function allAppsMessage() {
 }
 
 function shareAll() {
+  track('share', 'all');
   openShare({
     title: 'Raz Apps — semua aplikasi',
     text: allAppsMessage(),
@@ -330,6 +354,9 @@ function openFromHash() {
 
 function wireDialogs() {
   document.addEventListener('click', (e) => {
+    const trackEl = e.target.closest('[data-track]');
+    if (trackEl) track(trackEl.dataset.track, trackEl.dataset.slug || '');
+
     const shareBtn = e.target.closest('[data-share]');
     if (shareBtn) {
       e.preventDefault();
@@ -391,6 +418,7 @@ async function init() {
   renderFilters();
   render();
   openFromHash();
+  track('page', '');
 }
 
 init();

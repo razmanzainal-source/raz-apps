@@ -1,0 +1,10 @@
+name = "raz-apps"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# Kaunter ringan: jumlah lawatan + klik. Tiada IP, tiada cookie.
+# Kunci statistik (STATS_KEY) disimpan sebagai environment variable di
+# Cloudflare Pages, BUKAN di dalam repo ini.
+[[kv_namespaces]]
+binding = "STATS"
+id = "e53bdd8b0b984003811ce2d769d24c27"

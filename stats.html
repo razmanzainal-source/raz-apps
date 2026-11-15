@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Statistik — Raz Apps</title>
+<style>
+  :root{--bg:#0b0d12;--card:#151925;--line:rgba(255,255,255,.09);--text:#f2f4f8;--muted:#98a0b3;--dim:#6c7488;--accent:#7c8cff;--good:#6ee7d7}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+  .wrap{max-width:900px;margin:0 auto;padding:32px 20px 80px}
+  h1{margin:0 0 4px;font-size:1.6rem;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:.85rem;margin:0 0 26px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:28px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .k{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+  .v{font-size:1.7rem;font-weight:700;letter-spacing:-.02em}
+  h2{font-size:1rem;margin:28px 0 10px;color:var(--muted);font-weight:600}
+  table{width:100%;border-collapse:collapse;font-size:.86rem}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--dim);font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+  td.n{text-align:right;font-variant-numeric:tabular-nums}
+  .bars{display:flex;align-items:flex-end;gap:6px;height:110px;margin-top:10px}
+  .bar{flex:1;background:linear-gradient(180deg,#7c8cff,#4b57b8);border-radius:5px 5px 0 0;min-height:2px;position:relative}
+  .bar span{position:absolute;bottom:-18px;left:0;right:0;text-align:center;font-size:.6rem;color:var(--dim)}
+  .login{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;max-width:420px}
+  input{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#0e1119;color:var(--text);font-size:.9rem;margin:10px 0}
+  button{padding:10px 16px;border-radius:10px;border:0;background:var(--text);color:#0b0d12;font-weight:650;cursor:pointer}
+  .err{color:#ff8f9f;font-size:.82rem;margin-top:8px}
+  .foot{margin-top:34px;color:var(--dim);font-size:.75rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Statistik Raz Apps</h1>
+  <p class="sub">Kaunter ringan — tiada IP, tiada cookie. Nombor sahaja.</p>
+
+  <div id="login" class="login" hidden>
+    <strong>Masukkan kunci statistik</strong>
+    <input id="key" type="password" placeholder="Kunci…" autocomplete="current-password">
+    <button id="go">Lihat</button>
+    <div class="err" id="err"></div>
+  </div>
+
+  <div id="dash" hidden>
+    <div class="cards" id="totals"></div>
+    <h2>Ikut app</h2>
+    <table id="apps"></table>
+    <h2>14 hari terakhir (lawatan)</h2>
+    <div class="bars" id="bars"></div>
+    <p class="foot">Dikemas kini secara langsung. Kiraan KV mungkin lewat beberapa saat.</p>
+  </div>
+</div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const KEY_STORE = 'razstats';
+
+function key() {
+  const u = new URL(location.href);
+  const k = u.searchParams.get('key');
+  if (k) { localStorage.setItem(KEY_STORE, k); return k; }
+  return localStorage.getItem(KEY_STORE) || '';
+}
+
+async function load(k) {
+  const res = await fetch('/api/stats?key=' + encodeURIComponent(k));
+  if (!res.ok) throw new Error(res.status === 403 ? 'Kunci salah' : 'Ralat ' + res.status);
+  return res.json();
+}
+
+function badge(label, value) {
+  return `<div class="card"><div class="k">${label}</div><div class="v">${value}</div></div>`;
+}
+
+function render(data) {
+  const t = data.totals || {};
+  $('#totals').innerHTML = [
+    badge('Lawatan', t.page || 0),
+    badge('Klik APK', t.apk || 0),
+    badge('Klik Browser', t.browser || 0),
+    badge('Klik App Store', t.ios || 0),
+    badge('Kongsi', t.share || 0)
+  ].join('');
+
+  const apps = data.apps || {};
+  const rows = Object.entries(apps)
+    .map(([slug, v]) => ({ slug, apk: v.apk || 0, browser: v.browser || 0, ios: v.ios || 0, share: v.share || 0, total: (v.apk||0)+(v.browser||0)+(v.ios||0)+(v.share||0) }))
+    .sort((a, b) => b.total - a.total);
+
+  $('#apps').innerHTML = `
+    <tr><th>App</th><th class="n">APK</th><th class="n">Browser</th><th class="n">iOS</th><th class="n">Kongsi</th></tr>
+    ${rows.map((r) => `<tr><td>${r.slug}</td><td class="n">${r.apk}</td><td class="n">${r.browser}</td><td class="n">${r.ios}</td><td class="n">${r.share}</td></tr>`).join('') || '<tr><td colspan="5">Belum ada data.</td></tr>'}`;
+
+  const days = data.days || {};
+  const list = [];
+  for (let i = 13; i >= 0; i--) {
+    const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
+    list.push({ d, n: (days[d] || {}).page || 0 });
+  }
+  const max = Math.max(1, ...list.map((x) => x.n));
+  $('#bars').innerHTML = list.map((x) =>
+    `<div class="bar" style="height:${Math.round((x.n / max) * 100)}%" title="${x.d}: ${x.n}"><span>${x.d.slice(8)}</span></div>`
+  ).join('');
+}
+
+async function start(k) {
+  try {
+    const data = await load(k);
+    $('#login').hidden = true;
+    $('#dash').hidden = false;
+    render(data);
+  } catch (e) {
+    $('#login').hidden = false;
+    $('#dash').hidden = true;
+    $('#err').textContent = e.message;
+  }
+}
+
+const k = key();
+if (k) start(k); else $('#login').hidden = false;
+
+$('#go').addEventListener('click', () => {
+  const v = $('#key').value.trim();
+  if (!v) return;
+  localStorage.setItem(KEY_STORE, v);
+  history.replaceState(null, '', '?key=' + encodeURIComponent(v));
+  start(v);
+});
+</script>
+</body>
+</html>
