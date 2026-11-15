@@ -22,7 +22,7 @@
         "Tahun 1–6",
         "Luar talian"
       ],
-      "version": "1.0",
+      "version": "1.0.0",
       "web": "apps/kataquest/",
       "apk": {
         "file": "kataquest-1.0.0.apk",
@@ -52,7 +52,7 @@
       "web": "apps/matematik-tahun3/",
       "apk": {
         "file": "matematik-tahun3-1.0.2.apk",
-        "size": "81 MB",
+        "size": "80 MB",
         "label": "universal"
       },
       "ios": null,
@@ -183,10 +183,10 @@
         "Sifir",
         "Luar talian"
       ],
-      "version": "1.2.0",
+      "version": "4.24.0",
       "web": "apps/papan-kira/",
       "apk": {
-        "file": "papan-kira-1.2.0.apk",
+        "file": "papan-kira-4.24.0.apk",
         "size": "72 MB",
         "label": "universal"
       },
