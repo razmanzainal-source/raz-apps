@@ -35,6 +35,10 @@ function releaseUrl(file) {
 function actionButtons(app, compact = false) {
   const out = [];
 
+  if (app.comingSoon) {
+    return `<span class="btn btn-soon" style="pointer-events:none">Coming soon</span>`;
+  }
+
   if (app.web) {
     out.push(`<a class="btn btn-primary" href="${esc(app.web)}" target="_blank" rel="noopener">
       ${Icons.play} Browser
@@ -72,6 +76,11 @@ function actionButtons(app, compact = false) {
 
 function shareMessage(app) {
   const lines = [`📚 *${app.name}* — ${app.tagline}`, '', app.description];
+
+  if (app.comingSoon) {
+    lines.push('', '⏳ Coming soon');
+    return lines.join('\n');
+  }
 
   const where = [];
   if (app.apk) where.push('Android (APK)');
@@ -177,6 +186,11 @@ function allAppsMessage() {
 
   APP_LIST.forEach((app, i) => {
     lines.push(`${i + 1}. *${app.name}* — ${app.tagline}`);
+    if (app.comingSoon) {
+      lines.push('   ⏳ Coming soon');
+      lines.push('');
+      return;
+    }
     if (app.apk) lines.push(`   🤖 APK: ${releaseUrl(app.apk.file)}`);
     if (app.ios) lines.push(`   🍎 iPhone: ${app.ios}`);
     if (app.web) lines.push(`   🌐 Web: ${location.origin}/apps/${app.slug}/`);
@@ -197,10 +211,12 @@ function shareAll() {
 
 function cardHtml(app) {
   const tags = (app.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join('');
-  const meta = [`v${esc(app.version || '1.0.0')}`];
-  if (app.web) meta.push('Web');
-  if (app.apk) meta.push(`Android · ${esc(app.apk.label || 'APK')}`);
-  if (app.ios) meta.push('iOS');
+  const meta = app.comingSoon ? ['Coming soon'] : [`v${esc(app.version || '1.0.0')}`];
+  if (!app.comingSoon) {
+    if (app.web) meta.push('Web');
+    if (app.apk) meta.push(`Android · ${esc(app.apk.label || 'APK')}`);
+    if (app.ios) meta.push('iOS');
+  }
 
   return `
   <article class="card" data-slug="${esc(app.slug)}">

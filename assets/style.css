@@ -218,6 +218,13 @@ img{max-width:100%;display:block}
 .btn-ghost{border-color:var(--line);color:var(--muted)}
 .btn-ghost:hover{color:var(--text);border-color:var(--line-strong)}
 .btn[disabled]{opacity:.4;pointer-events:none}
+.btn-soon{
+  background:rgba(255,196,107,.10);
+  color:#ffc46b;
+  border-color:rgba(255,196,107,.30);
+  font-weight:650;
+  letter-spacing:.01em;
+}
 .card-meta{
   display:flex;gap:10px;font-size:.72rem;color:var(--dim);
   margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);

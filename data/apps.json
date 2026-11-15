@@ -319,13 +319,10 @@
       ],
       "version": "0.8.118",
       "web": null,
-      "apk": {
-        "file": "hidup-plus-0.8.118.apk",
-        "size": "80 MB",
-        "label": "arm64"
-      },
+      "apk": null,
       "ios": null,
-      "featured": false
+      "featured": false,
+      "comingSoon": true
     }
   ]
 }
