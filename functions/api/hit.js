@@ -1,9 +1,8 @@
 // Kaunter ringan untuk Raz Apps.
-// POST /api/hit  { t: "page"|"apk"|"browser"|"ios"|"share"|"all", s: "<slug>" }
-// Tiada IP, tiada cookie, tiada data peribadi — hanya nombor.
+// POST /api/hit  { t: "page"|"apk"|"browser"|"ios"|"share", s: "<slug>", r: "<sumber>" }
+// Tiada IP, tiada cookie, tiada profil individu — hanya pembilang agregat.
 
-const ALLOWED = new Set(['page', 'apk', 'browser', 'ios', 'share', 'all', 'stats']);
-const DAYS_KEEP = 400;
+const ALLOWED = new Set(['page', 'apk', 'browser', 'ios', 'share']);
 
 export async function onRequestPost({ request, env }) {
   try {
@@ -13,12 +12,19 @@ export async function onRequestPost({ request, env }) {
 
     const s = String(body.s || '').replace(/[^a-z0-9-]/gi, '').slice(0, 40);
     const day = new Date().toISOString().slice(0, 10);
+    const cc = (request.cf && request.cf.country) || 'XX';
+    const dev = deviceOf(request.headers.get('user-agent') || '');
+    const ref = String(body.r || 'direct').replace(/[^a-z0-9._-]/gi, '').slice(0, 16) || 'direct';
 
-    const keys = [
-      `total:${t}`,
-      `day:${day}:${t}`,
-    ];
+    const keys = [`total:${t}`, `day:${day}:${t}`];
     if (s) keys.push(`app:${s}:${t}`);
+
+    // Metadata hanya untuk lawatan halaman (bukan setiap klik) supaya KV ringan.
+    if (t === 'page') {
+      keys.push(`geo:${cc}:page`);
+      keys.push(`dev:${dev}:page`);
+      keys.push(`ref:${ref}:page`);
+    }
 
     await Promise.all(keys.map(async (k) => {
       const cur = Number(await env.STATS.get(k)) || 0;
@@ -32,9 +38,15 @@ export async function onRequestPost({ request, env }) {
 }
 
 export async function onRequestGet({ env }) {
-  // senarai ringkas untuk debugging (tanpa kunci)
   const list = await env.STATS.list({ limit: 20 });
   return json({ ok: true, keys: list.keys.map((k) => k.name) });
+}
+
+function deviceOf(ua) {
+  const u = ua.toLowerCase();
+  if (/ipad|tablet|playbook|silk/.test(u)) return 'tablet';
+  if (/mobi|android|iphone|ipod/.test(u)) return 'mobile';
+  return 'desktop';
 }
 
 function json(obj, status = 200) {

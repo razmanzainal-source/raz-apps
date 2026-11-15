@@ -47,6 +47,16 @@
     <div class="cards" id="totals"></div>
     <h2>Ikut app</h2>
     <table id="apps"></table>
+
+    <h2>Sumber trafik</h2>
+    <table id="refs"></table>
+
+    <h2>Peranti</h2>
+    <table id="devices"></table>
+
+    <h2>Negara</h2>
+    <table id="geo"></table>
+
     <h2>14 hari terakhir (lawatan)</h2>
     <div class="bars" id="bars"></div>
     <p class="foot">Dikemas kini secara langsung. Kiraan KV mungkin lewat beberapa saat.</p>
@@ -94,6 +104,40 @@ function render(data) {
     ${rows.map((r) => `<tr><td>${r.slug}</td><td class="n">${r.apk}</td><td class="n">${r.browser}</td><td class="n">${r.ios}</td><td class="n">${r.share}</td></tr>`).join('') || '<tr><td colspan="5">Belum ada data.</td></tr>'}`;
 
   const days = data.days || {};
+
+  // Sumber trafik, peranti, negara
+  const LABELS = {
+    direct: 'Terus / WhatsApp group',
+    whatsapp: 'WhatsApp',
+    facebook: 'Facebook',
+    instagram: 'Instagram',
+    telegram: 'Telegram',
+    google: 'Google',
+    tiktok: 'TikTok',
+    youtube: 'YouTube',
+    internal: 'Dalam laman',
+    other: 'Lain-lain',
+    mobile: 'Telefon',
+    tablet: 'Tablet',
+    desktop: 'Komputer'
+  };
+  const flag = (cc) => {
+    if (!/^[A-Z]{2}$/.test(cc) || cc === 'XX') return '🌐';
+    return String.fromCodePoint(...[...cc].map((c) => 127397 + c.charCodeAt(0)));
+  };
+  const simpleTable = (el, obj, labelFn) => {
+    const rows = Object.entries(obj || {})
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 12);
+    el.innerHTML = rows.length
+      ? rows.map(([k, v]) => `<tr><td>${labelFn(k, v)}</td><td class="n">${v}</td></tr>`).join('')
+      : '<tr><td>Belum ada data.</td><td class="n">0</td></tr>';
+  };
+
+  simpleTable($('#refs'), data.ref, (k) => LABELS[k] || k);
+  simpleTable($('#devices'), data.device, (k) => LABELS[k] || k);
+  simpleTable($('#geo'), data.geo, (k) => `${flag(k)} ${k}`);
+
   const list = [];
   for (let i = 13; i >= 0; i--) {
     const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);

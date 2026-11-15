@@ -2,7 +2,10 @@
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
   const key = url.searchParams.get('key');
-  if (!key || key !== env.STATS_KEY) {
+
+  // Kunci disimpan dalam KV (bukan repo, bukan env) supaya kekal selepas deploy.
+  const expected = (await env.STATS.get('cfg:key')) || env.STATS_KEY;
+  if (!key || !expected || key !== expected) {
     return json({ ok: false, error: 'forbidden' }, 403);
   }
 
@@ -24,21 +27,32 @@ export async function onRequestGet({ request, env }) {
   const totals = {};
   const apps = {};
   const days = {};
+  const geo = {};
+  const device = {};
+  const ref = {};
 
   for (const [k, v] of Object.entries(values)) {
-    const [type, ...rest] = k.split(':');
+    const parts = k.split(':');
+    const type = parts[0];
+
     if (type === 'total') {
-      totals[rest[0]] = v;
+      totals[parts[1]] = v;
     } else if (type === 'app') {
-      const [slug, t] = rest;
+      const [slug, t] = [parts[1], parts[2]];
       (apps[slug] = apps[slug] || {})[t] = v;
     } else if (type === 'day') {
-      const [d, t] = rest;
+      const [d, t] = [parts[1], parts[2]];
       (days[d] = days[d] || {})[t] = v;
+    } else if (type === 'geo') {
+      geo[parts[1]] = v;
+    } else if (type === 'dev') {
+      device[parts[1]] = v;
+    } else if (type === 'ref') {
+      ref[parts[1]] = v;
     }
   }
 
-  return json({ ok: true, totals, apps, days });
+  return json({ ok: true, totals, apps, days, geo, device, ref });
 }
 
 function json(obj, status = 200) {

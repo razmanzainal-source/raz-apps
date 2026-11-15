@@ -25,10 +25,33 @@ const $  = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
 /* ---------- kaunter ringan (tanpa IP/cookie) ---------- */
+function refBucket() {
+  const utm = (new URLSearchParams(location.search).get('utm_source') || '').toLowerCase();
+  if (utm) return utm.slice(0, 12);
+
+  const r = document.referrer || '';
+  if (!r) return 'direct';
+
+  let host = '';
+  try { host = new URL(r).hostname.replace(/^www\./, ''); } catch { return 'other'; }
+
+  if (/wa\.me|whatsapp/.test(host)) return 'whatsapp';
+  if (/facebook|fb\./.test(host)) return 'facebook';
+  if (/instagram/.test(host)) return 'instagram';
+  if (/t\.me|telegram/.test(host)) return 'telegram';
+  if (/google/.test(host)) return 'google';
+  if (/tiktok/.test(host)) return 'tiktok';
+  if (/youtube/.test(host)) return 'youtube';
+  if (host.includes('raz-apps') || host.includes('github.io')) return 'internal';
+  return 'other';
+}
+
 function track(type, slug = '') {
   try {
     if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
-    const body = JSON.stringify({ t: type, s: slug });
+    const payload = { t: type, s: slug };
+    if (type === 'page') payload.r = refBucket();
+    const body = JSON.stringify(payload);
     if (navigator.sendBeacon) {
       navigator.sendBeacon('/api/hit', new Blob([body], { type: 'application/json' }));
     } else {
