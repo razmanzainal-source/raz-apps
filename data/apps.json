@@ -265,14 +265,11 @@
         "Luar talian"
       ],
       "version": "1.0.0",
-      "web": "apps/neon-beat/",
-      "apk": {
-        "file": "neon-beat-1.0.0.apk",
-        "size": "50 MB",
-        "label": "universal"
-      },
+      "web": null,
+      "apk": null,
       "ios": null,
-      "featured": false
+      "featured": false,
+      "comingSoon": true
     },
     {
       "slug": "volt-arena",
@@ -291,14 +288,11 @@
         "Browser"
       ],
       "version": "1.0.0",
-      "web": "apps/volt-arena/",
-      "apk": {
-        "file": "volt-arena-1.0.0.apk",
-        "size": "49 MB",
-        "label": "universal"
-      },
+      "web": null,
+      "apk": null,
       "ios": null,
-      "featured": false
+      "featured": false,
+      "comingSoon": true
     },
     {
       "slug": "hidup-plus",
