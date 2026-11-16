@@ -17,10 +17,14 @@
   .k{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:6px}
   .v{font-size:1.7rem;font-weight:700;letter-spacing:-.02em}
   h2{font-size:1rem;margin:28px 0 10px;color:var(--muted);font-weight:600}
-  table{width:100%;border-collapse:collapse;font-size:.86rem}
-  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;font-size:.86rem;table-layout:auto}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
   th{color:var(--dim);font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
-  td.n{text-align:right;font-variant-numeric:tabular-nums}
+  th.n,td.n{text-align:right;width:92px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  th:first-child,td:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:260px}
+  tbody tr:hover, table tr:hover{background:rgba(255,255,255,.02)}
+  .app-cell{display:flex;align-items:center;gap:10px}
+  .app-cell img{width:22px;height:22px;border-radius:6px;flex:none}
   .bars{display:flex;align-items:flex-end;gap:6px;height:110px;margin-top:10px}
   .bar{flex:1;background:linear-gradient(180deg,#7c8cff,#4b57b8);border-radius:5px 5px 0 0;min-height:2px;position:relative}
   .bar span{position:absolute;bottom:-18px;left:0;right:0;text-align:center;font-size:.6rem;color:var(--dim)}
@@ -80,6 +84,14 @@ async function load(k) {
   return res.json();
 }
 
+let APPS = {};
+async function loadApps() {
+  try {
+    const d = await (await fetch('/data/apps.json', { cache: 'no-cache' })).json();
+    d.apps.forEach((a) => { APPS[a.slug] = a; });
+  } catch { /* guna slug sahaja */ }
+}
+
 function badge(label, value) {
   return `<div class="card"><div class="k">${label}</div><div class="v">${value}</div></div>`;
 }
@@ -100,8 +112,13 @@ function render(data) {
     .sort((a, b) => b.total - a.total);
 
   $('#apps').innerHTML = `
-    <tr><th>App</th><th class="n">APK</th><th class="n">Browser</th><th class="n">iOS</th><th class="n">Kongsi</th></tr>
-    ${rows.map((r) => `<tr><td>${r.slug}</td><td class="n">${r.apk}</td><td class="n">${r.browser}</td><td class="n">${r.ios}</td><td class="n">${r.share}</td></tr>`).join('') || '<tr><td colspan="5">Belum ada data.</td></tr>'}`;
+    <tr><th>App</th><th class="n">APK</th><th class="n">Browser</th><th class="n">iOS</th><th class="n">Kongsi</th><th class="n">Jumlah</th></tr>
+    ${rows.map((r) => {
+      const app = APPS[r.slug];
+      const label = app ? app.name : r.slug;
+      const icon = app && app.icon ? `<img src="${app.icon}" alt="">` : '';
+      return `<tr><td><span class="app-cell">${icon}${label}</span></td><td class="n">${r.apk}</td><td class="n">${r.browser}</td><td class="n">${r.ios}</td><td class="n">${r.share}</td><td class="n"><strong>${r.total}</strong></td></tr>`;
+    }).join('') || '<tr><td colspan="6">Belum ada data.</td></tr>'}`;
 
   const days = data.days || {};
 
@@ -151,7 +168,7 @@ function render(data) {
 
 async function start(k) {
   try {
-    const data = await load(k);
+    const [data] = await Promise.all([load(k), loadApps()]);
     $('#login').hidden = true;
     $('#dash').hidden = false;
     render(data);
