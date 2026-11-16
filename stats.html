@@ -98,12 +98,14 @@ function badge(label, value) {
 
 function render(data) {
   const t = data.totals || {};
+  const botTotal = Object.values(data.bot || {}).reduce((a, b) => a + b, 0);
   $('#totals').innerHTML = [
     badge('Lawatan', t.page || 0),
     badge('Klik APK', t.apk || 0),
     badge('Klik Browser', t.browser || 0),
     badge('Klik App Store', t.ios || 0),
-    badge('Kongsi', t.share || 0)
+    badge('Kongsi', t.share || 0),
+    badge('Bot (diabai)', botTotal)
   ].join('');
 
   const apps = data.apps || {};

@@ -30,6 +30,7 @@ export async function onRequestGet({ request, env }) {
   const geo = {};
   const device = {};
   const ref = {};
+  const bot = {};
 
   for (const [k, v] of Object.entries(values)) {
     const parts = k.split(':');
@@ -49,10 +50,12 @@ export async function onRequestGet({ request, env }) {
       device[parts[1]] = v;
     } else if (type === 'ref') {
       ref[parts[1]] = v;
+    } else if (type === 'bot') {
+      bot[parts[1]] = v;
     }
   }
 
-  return json({ ok: true, totals, apps, days, geo, device, ref });
+  return json({ ok: true, totals, apps, days, geo, device, ref, bot });
 }
 
 function json(obj, status = 200) {
