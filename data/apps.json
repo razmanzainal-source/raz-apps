@@ -342,6 +342,26 @@
       },
       "ios": null,
       "featured": false
+    },
+    {
+      "slug": "niagalite",
+      "name": "NiagaLite",
+      "tagline": "Rekod perniagaan kecil, luar talian",
+      "description": "Produk, pelanggan, pesanan, bayaran dan pergerakan stok dalam satu app. Resit PDF boleh dikongsi — sesuai untuk peniaga kecil dan pasar malam.",
+      "icon": "assets/icons/niagalite.png",
+      "shots": [],
+      "category": "alat",
+      "tags": [
+        "Perniagaan",
+        "Stok",
+        "Resit PDF"
+      ],
+      "version": "1.0.0",
+      "web": null,
+      "apk": null,
+      "ios": null,
+      "featured": false,
+      "comingSoon": true
     }
   ]
 }
