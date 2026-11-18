@@ -408,8 +408,27 @@ function wireDialogs() {
   });
 }
 
+/* ---------- tema ---------- */
+function initTheme() {
+  const btn = $('#theme-toggle');
+  if (!btn) return;
+  const apply = (t) => {
+    document.documentElement.dataset.theme = t;
+    document.querySelector('.i-moon').style.display = t === 'light' ? 'none' : '';
+    document.querySelector('.i-sun').style.display = t === 'light' ? '' : 'none';
+  };
+  apply(document.documentElement.dataset.theme || 'dark');
+
+  btn.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    apply(next);
+    try { localStorage.setItem('raztheme', next); } catch {}
+  });
+}
+
 async function init() {
   wireDialogs();
+  initTheme();
 
   $('#search').addEventListener('input', (e) => {
     query = e.target.value;

@@ -6,6 +6,14 @@
 <title>Raz Apps — Preview &amp; Muat Turun</title>
 <meta name="description" content="Koleksi aplikasi Android & iOS oleh Razman Zainal. Cuba terus dalam browser atau muat turun APK.">
 <meta name="theme-color" content="#0b0d12">
+<meta name="color-scheme" content="dark light">
+<script>
+  try {
+    var t = localStorage.getItem('raztheme');
+    if (t !== 'light' && t !== 'dark') t = 'dark';
+    document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Raz Apps">
 <meta property="og:title" content="Raz Apps — aplikasi pendidikan &amp; permainan">
@@ -30,6 +38,9 @@
       <a href="#apps">Aplikasi</a>
       <a href="#sokong">Sokong</a>
       <button type="button" class="linkish" data-open="guide">Panduan APK</button>
+      <button type="button" class="theme-btn" id="theme-toggle" aria-label="Tukar tema terang/gelap" title="Tukar tema">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-moon" d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/><g class="i-sun"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></g></svg>
+      </button>
     </nav>
   </div>
 </header>
