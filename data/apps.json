@@ -256,7 +256,10 @@
       "description": "Permainan rentak prosedural yang dijana secara automatik. Main solo atau cabar rakan dalam pertandingan LAN tanpa Internet.",
       "icon": "assets/icons/neon-beat.png",
       "shots": [
-        "assets/shots/neon-beat-1.png"
+        "assets/shots/neon-beat-1.png",
+        "assets/shots/neon-beat-2.png",
+        "assets/shots/neon-beat-3.png",
+        "assets/shots/neon-beat-4.png"
       ],
       "category": "permainan",
       "tags": [
@@ -266,33 +269,13 @@
       ],
       "version": "1.0.0",
       "web": null,
-      "apk": null,
+      "apk": {
+        "file": "neon-beat-1.0.0.apk",
+        "size": "51 MB",
+        "label": "universal"
+      },
       "ios": null,
-      "featured": false,
-      "comingSoon": true
-    },
-    {
-      "slug": "volt-arena",
-      "name": "Volt Arena",
-      "tagline": "Arena pertempuran pantas",
-      "description": "Permainan aksi ringkas untuk sesi pendek. Cuba terus dalam browser — tiada pemasangan diperlukan.",
-      "icon": "assets/icons/volt-arena.png",
-      "shots": [
-        "assets/shots/volt-arena-1.png",
-        "assets/shots/volt-arena-2.png"
-      ],
-      "category": "permainan",
-      "tags": [
-        "Aksi",
-        "Eksperimen",
-        "Browser"
-      ],
-      "version": "1.0.0",
-      "web": null,
-      "apk": null,
-      "ios": null,
-      "featured": false,
-      "comingSoon": true
+      "featured": false
     },
     {
       "slug": "hidup-plus",
