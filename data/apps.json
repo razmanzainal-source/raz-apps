@@ -346,22 +346,52 @@
     {
       "slug": "niagalite",
       "name": "NiagaLite",
-      "tagline": "Rekod perniagaan kecil, luar talian",
-      "description": "Produk, pelanggan, pesanan, bayaran dan pergerakan stok dalam satu app. Resit PDF boleh dikongsi — sesuai untuk peniaga kecil dan pasar malam.",
+      "tagline": "Urus perniagaan dari poket anda",
+      "description": "Produk, pesanan, bayaran, resit dan laporan — semuanya luar talian di satu tempat. Resit PDF, katalog dan laporan jualan untuk peniaga kecil.",
       "icon": "assets/icons/niagalite.png",
-      "shots": [],
+      "shots": [
+        "assets/shots/niagalite-1.png"
+      ],
       "category": "alat",
       "tags": [
         "Perniagaan",
-        "Stok",
-        "Resit PDF"
+        "Resit PDF",
+        "Luar talian"
       ],
       "version": "1.0.0",
       "web": null,
-      "apk": null,
+      "apk": {
+        "file": "niagalite-1.0.0.apk",
+        "size": "70 MB",
+        "label": "universal"
+      },
       "ios": null,
-      "featured": false,
-      "comingSoon": true
+      "featured": true
+    },
+    {
+      "slug": "star-arena",
+      "name": "Star Arena",
+      "tagline": "Arena gelombang 3D, satu jari",
+      "description": "Shooter arena potret dengan auto-aim: lima jenis musuh, tiga peringkat bos, dash dan meter BLAST. Art, watak dan audio asli — luar talian.",
+      "icon": "assets/icons/star-arena.png",
+      "shots": [
+        "assets/shots/star-arena-1.png"
+      ],
+      "category": "permainan",
+      "tags": [
+        "Aksi",
+        "3D",
+        "Luar talian"
+      ],
+      "version": "0.2.6",
+      "web": null,
+      "apk": {
+        "file": "star-arena-0.2.6.apk",
+        "size": "30 MB",
+        "label": "universal"
+      },
+      "ios": null,
+      "featured": false
     }
   ]
 }
