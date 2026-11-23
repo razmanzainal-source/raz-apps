@@ -59,6 +59,34 @@
       "featured": true
     },
     {
+      "slug": "matematik-tahun1",
+      "name": "Matematik Tahap 1",
+      "tagline": "Faham cerita, kira bentuk lazim",
+      "description": "Matematik Tahun 1–3: baca soalan cerita, pilih operasi, susun nombor dan selesaikan bentuk lazim langkah demi langkah bersama Cikgu Maya. Luar talian sepenuhnya.",
+      "icon": "assets/icons/matematik-tahun1.png",
+      "shots": [
+        "assets/shots/matematik-tahun1-1.png",
+        "assets/shots/matematik-tahun1-2.png",
+        "assets/shots/matematik-tahun1-3.png",
+        "assets/shots/matematik-tahun1-4.png"
+      ],
+      "category": "pendidikan",
+      "tags": [
+        "Matematik",
+        "Tahun 1–3",
+        "Luar talian"
+      ],
+      "version": "0.1.0",
+      "web": null,
+      "apk": {
+        "file": "matematik-tahun1-0.1.0.apk",
+        "size": "54 MB",
+        "label": "universal"
+      },
+      "ios": null,
+      "featured": false
+    },
+    {
       "slug": "sains-tahun2",
       "name": "Ulang Kaji Sains Tahun 2",
       "tagline": "Sains KSSR, tanpa Internet",
@@ -239,11 +267,11 @@
         "Aksesibiliti",
         "Luar talian"
       ],
-      "version": "1.10.1",
+      "version": "1.10.2",
       "web": null,
       "apk": {
-        "file": "voiceless-1.10.1.apk",
-        "size": "39 MB",
+        "file": "voiceless-1.10.2.apk",
+        "size": "40 MB",
         "label": "arm64"
       },
       "ios": "https://apps.apple.com/my/app/voiceless-aac/id6831918887",
@@ -366,10 +394,10 @@
         "3D",
         "Luar talian"
       ],
-      "version": "0.2.6",
+      "version": "0.2.7",
       "web": null,
       "apk": {
-        "file": "star-arena-0.2.6.apk",
+        "file": "star-arena-0.2.7.apk",
         "size": "30 MB",
         "label": "universal"
       },
