@@ -246,7 +246,7 @@
         "size": "39 MB",
         "label": "arm64"
       },
-      "ios": null,
+      "ios": "https://apps.apple.com/my/app/voiceless-aac/id6831918887",
       "featured": true
     },
     {
@@ -274,7 +274,7 @@
         "size": "51 MB",
         "label": "universal"
       },
-      "ios": null,
+      "ios": "https://apps.apple.com/my/app/neon-beat-by-raz/id6834316867",
       "featured": false
     },
     {
