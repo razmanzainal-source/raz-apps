@@ -252,6 +252,33 @@
       "featured": false
     },
     {
+      "slug": "gerak",
+      "name": "GERAK",
+      "tagline": "Kecergasan luar talian, tanpa akaun",
+      "description": "Rekod langkah, senaman, tidur, mood dan kekuatan dalam satu app. Data kekal pada telefon — tiada awan, tiada akaun, tiada iklan.",
+      "icon": "assets/icons/gerak.png",
+      "shots": [
+        "assets/shots/gerak-1.png",
+        "assets/shots/gerak-2.png",
+        "assets/shots/gerak-3.png"
+      ],
+      "category": "kesihatan",
+      "tags": [
+        "Kecergasan",
+        "Kesihatan",
+        "Luar talian"
+      ],
+      "version": "0.5.0",
+      "web": null,
+      "apk": {
+        "file": "gerak-0.5.0.apk",
+        "size": "61 MB",
+        "label": "universal"
+      },
+      "ios": null,
+      "featured": false
+    },
+    {
       "slug": "voiceless",
       "name": "Voiceless",
       "tagline": "Every Human Deserves a Voice",
@@ -376,7 +403,7 @@
         "size": "70 MB",
         "label": "universal"
       },
-      "ios": null,
+      "ios": "https://apps.apple.com/my/app/niagalite/id6837041616",
       "featured": true
     },
     {
@@ -394,11 +421,11 @@
         "3D",
         "Luar talian"
       ],
-      "version": "0.2.7",
+      "version": "0.4.3",
       "web": null,
       "apk": {
-        "file": "star-arena-0.2.7.apk",
-        "size": "30 MB",
+        "file": "star-arena-0.4.3.apk",
+        "size": "31 MB",
         "label": "universal"
       },
       "ios": null,
