@@ -270,13 +270,10 @@
       ],
       "version": "0.5.0",
       "web": null,
-      "apk": {
-        "file": "gerak-0.5.0.apk",
-        "size": "61 MB",
-        "label": "universal"
-      },
+      "apk": null,
       "ios": null,
-      "featured": false
+      "featured": false,
+      "comingSoon": true
     },
     {
       "slug": "voiceless",
@@ -423,13 +420,10 @@
       ],
       "version": "0.4.3",
       "web": null,
-      "apk": {
-        "file": "star-arena-0.4.3.apk",
-        "size": "31 MB",
-        "label": "universal"
-      },
+      "apk": null,
       "ios": null,
-      "featured": false
+      "featured": false,
+      "comingSoon": true
     }
   ]
 }
