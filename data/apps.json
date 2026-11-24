@@ -424,6 +424,25 @@
       "ios": null,
       "featured": false,
       "comingSoon": true
+    },
+    {
+      "slug": "kantin-pintar",
+      "name": "Kantin Pintar Bersama Raz",
+      "tagline": "Mini-game kantin sekolah",
+      "description": "Mini-game pendidikan dwibahasa (BM/English) untuk kanak-kanak sekolah rendah. Raz mengurus kantin sekolah — semua grafik dijana sendiri, tiada Internet diperlukan.",
+      "icon": "assets/icons/kantin-pintar.png",
+      "shots": [],
+      "category": "permainan",
+      "tags": [
+        "Pendidikan",
+        "Mini-game",
+        "Luar talian"
+      ],
+      "version": "1.0.0",
+      "web": "apps/kantin-pintar/",
+      "apk": null,
+      "ios": null,
+      "featured": false
     }
   ]
 }
