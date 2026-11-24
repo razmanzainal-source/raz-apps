@@ -137,7 +137,9 @@ function shareMessage(app) {
 }
 
 function shareLink(app) {
-  return `${location.origin}${location.pathname}#${app.slug}`;
+  // Setiap app ada URL sendiri (/app/<slug>) supaya pratonton kongsi
+  // (WhatsApp/Facebook/X) memaparkan kad OG app itu, bukan kad laman utama.
+  return `${location.origin}/app/${encodeURIComponent(app.slug)}`;
 }
 
 function siteMessage() {
@@ -364,14 +366,26 @@ function openDetail(slug) {
   if (!dlg.open) dlg.showModal();
   dlg.scrollTop = 0;
 
-  // URL boleh dikongsi: .../#slug
-  if (location.hash !== `#${app.slug}`) {
+  document.title = `${app.name} — ${app.tagline} | Raz Apps`;
+  const descMeta = document.querySelector('meta[name="description"]');
+  if (descMeta) descMeta.setAttribute('content', app.description);
+
+  // URL boleh dikongsi: /app/<slug> (kad OG sendiri) atau .../#slug
+  if (location.pathname.startsWith('/app/')) {
+    const path = `/app/${encodeURIComponent(app.slug)}`;
+    if (location.pathname !== path) history.replaceState(null, '', path);
+  } else if (location.hash !== `#${app.slug}`) {
     history.replaceState(null, '', `#${app.slug}`);
   }
 }
 
+function slugFromPath() {
+  const m = location.pathname.match(/^\/app\/([^/]+)\/?$/);
+  return m ? decodeURIComponent(m[1]) : '';
+}
+
 function openFromHash() {
-  const slug = decodeURIComponent(location.hash.replace(/^#/, ''));
+  const slug = decodeURIComponent(location.hash.replace(/^#/, '')) || slugFromPath();
   if (slug && APP_LIST.some((a) => a.slug === slug)) openDetail(slug);
 }
 
@@ -401,7 +415,10 @@ function wireDialogs() {
       if (e.target === dlg) dlg.close(); // klik backdrop
     });
     dlg.addEventListener('close', () => {
-      if (dlg.id === 'detail' && location.hash) {
+      if (dlg.id !== 'detail') return;
+      if (location.pathname.startsWith('/app/')) {
+        history.replaceState(null, '', '/');
+      } else if (location.hash) {
         history.replaceState(null, '', location.pathname + location.search);
       }
     });
@@ -446,7 +463,15 @@ async function init() {
     return;
   }
 
-  if (CONFIG.title) document.title = `${CONFIG.title} — Preview & Muat Turun`;
+  const directSlug = window.__APP_SLUG__ || slugFromPath();
+  const directApp = APP_LIST.find((a) => a.slug === directSlug);
+  if (directApp) {
+    document.title = `${directApp.name} — ${directApp.tagline} | Raz Apps`;
+    const desc = document.querySelector('meta[name="description"]');
+    if (desc) desc.setAttribute('content', directApp.description);
+  } else if (CONFIG.title) {
+    document.title = `${CONFIG.title} — Preview & Muat Turun`;
+  }
 
   const siteBtn = $('#share-site');
   if (siteBtn) siteBtn.addEventListener('click', shareSite);

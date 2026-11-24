@@ -87,6 +87,24 @@ BASE=/raz-apps ./scripts/build-web.sh
 - Latar belakang audio sesetengah app menyumbang saiz paling besar
   (`assets/assets/bunyi`).
 
+## Kongsi per app (kad OG sendiri)
+
+Setiap app ada URL sendiri:
+
+```text
+https://raz-apps.pages.dev/app/<slug>
+```
+
+`functions/app/[slug].js` membaca `data/apps.json` dan menggantikan meta
+Open Graph/Twitter, jadi WhatsApp/Facebook/X memaparkan nama, tagline, gambar
+dan pautan app itu — bukan kad laman utama.
+
+Selepas menambah atau menukar app/ikon/tangkapan skrin, jana semula kad OG:
+
+```bash
+python3 scripts/make-og.py     # tulis assets/og/<slug>.png (1200x630)
+```
+
 ## Deploy
 
 ### Cloudflare Pages (utama)
