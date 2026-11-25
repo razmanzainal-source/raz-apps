@@ -427,9 +427,9 @@
     },
     {
       "slug": "kantin-pintar",
-      "name": "Kantin Pintar Bersama Raz",
+      "name": "Kantin Pintar",
       "tagline": "Mini-game kantin sekolah",
-      "description": "Raz kecil diberi tanggungjawab mengurus kantin sekolah. Setiap pagi dia beli stok dengan baki duit yang terhad, menetapkan harga, melayan pelanggan, kemudian mengira semula untung dan baki. Sambil bermain, anak-anak belajar mengurus wang: membezakan keperluan dan keinginan, menilai harga, membuat baki serta menyimpan untung. Mini-game dwibahasa (BM/English) dengan grafik asli — 100% luar talian.",
+      "description": "Raz diberi tanggungjawab mengurus kantin sekolah. Setiap pagi dia beli stok dengan baki duit yang terhad, menetapkan harga, melayan pelanggan, kemudian mengira semula untung dan baki. Sambil bermain, anak-anak belajar mengurus wang: membezakan keperluan dan keinginan, menilai harga, membuat baki serta menyimpan untung. Mini-game dwibahasa (BM/English) dengan grafik asli — 100% luar talian.",
       "icon": "assets/icons/kantin-pintar.png",
       "shots": [
         "assets/shots/kantin-pintar-1.png",
