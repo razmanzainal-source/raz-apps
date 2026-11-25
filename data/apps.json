@@ -382,10 +382,14 @@
       "slug": "niagalite",
       "name": "NiagaLite",
       "tagline": "Urus perniagaan dari poket anda",
-      "description": "Produk, pesanan, bayaran, resit dan laporan — semuanya luar talian di satu tempat. Resit PDF, katalog dan laporan jualan untuk peniaga kecil.",
+      "description": "Seorang peniaga kecil memulakan hari dengan senarai stok di telefon. NiagaLite menjadikan langkah itu mudah: daftar produk dan harga, catat pesanan, terima bayaran penuh atau deposit, kemudian hasilkan resit PDF untuk pelanggan. Katalog boleh dikongsi, laporan jualan dan baki hutang sentiasa kemas — semuanya luar talian, tanpa akaun dan tanpa iklan. Data kekal di telefon, dengan sandaran dan pemulihan bila diperlukan.",
       "icon": "assets/icons/niagalite.png",
       "shots": [
-        "assets/shots/niagalite-1.png"
+        "assets/shots/niagalite-1.png",
+        "assets/shots/niagalite-2.png",
+        "assets/shots/niagalite-3.png",
+        "assets/shots/niagalite-4.png",
+        "assets/shots/niagalite-5.png"
       ],
       "category": "alat",
       "tags": [
